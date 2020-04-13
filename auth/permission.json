@@ -1,0 +1,37 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"create": ["_id", "_created", "user", "name", "rights"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_user_name": {"unique": ["user", "name"]}
+		},
+		"table": "permission"
+	},
+
+	"__name__": "Permission",
+
+	"_id": {
+		"__type__":"uint",
+		"__optional__": true
+	},
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql_opts__": "DEFAULT CURRENT_TIMESTAMP"
+	},
+	"user": {
+		"__type__": "uuid"
+	},
+	"name": {
+		"__type__": "string",
+		"__sql_type__": "CHAR(24)"
+	},
+	"rights": {
+		"__type__": "uint",
+		"__minimum__": 1,
+		"__maximum__": 15,
+		"__sql_type__": "TINYINT UNSIGNED"
+	}
+}

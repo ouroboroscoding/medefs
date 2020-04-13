@@ -1,0 +1,178 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"changes": ["user"],
+		"create": ["_created", "email", "passwd", "locale",
+			"firstName", "lastName", "title", "suffix",
+			"phoneCode", "phoneNumber", "phoneExt",
+			"address1", "address2", "city", "division", "country"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"email": {"unique": null}
+		},
+		"primary": "_id",
+		"table": "user"
+	},
+
+	"__react__": {
+		"insert": ["email", "passwd", "locale", "title", "firstName", "lastName",
+					"suffix", "phoneNumber", "phoneExt", "address1", "address2",
+					"city"],
+		"update": ["_id", "locale", "title", "firstName", "lastName", "suffix",
+					"phoneNumber", "phoneExt", "address1", "address2",
+					"city"]
+	},
+
+	"__name__": "User",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID",
+			"type": "readonly"
+		}
+	},
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql_opts__": "DEFAULT CURRENT_TIMESTAMP"
+	},
+	"email": {
+		"__type__":"string",
+		"__maximum__": 127,
+		"__sql_type__": "varchar(127)",
+		"__react__": {
+			"title": "Email Address"
+		}
+	},
+	"passwd": {
+		"__type__":"string",
+		"__regex__":"^[0-9a-fA-F]{72}$",
+		"__sql_type__": "char(72)",
+		"__react__": {
+			"regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})",
+			"title": "Password",
+			"type": "password"
+		}
+	},
+	"locale":{
+		"__type__": "string",
+		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
+		"__sql_type__": "char(5)",
+		"__react__": {
+			"options": [["en-US", "U.S. English"]],
+			"title": "Language",
+			"type": "select"
+		}
+	},
+	"firstName": {
+		"__type__": "string",
+		"__minumum__": 1,
+		"__maximum__": 31,
+		"__sql_type__": "varchar(31)",
+		"__react__": {
+			"title": "Name"
+		}
+	},
+	"lastName": {
+		"__type__": "string",
+		"__minumum__": 2,
+		"__maximum__": 31,
+		"__sql_type__": "varchar(31)",
+		"__react__": {
+			"title": "Surname"
+		}
+	},
+	"title": {
+		"__type__": "string",
+		"__options__": ["Dr.", "Mr.", "Mrs.", "Ms."],
+		"__optional__": true,
+		"__sql_type__": "enum('Dr.', 'Mr.', 'Mrs.', 'Ms.')",
+		"__react__": {
+			"title": "Title",
+			"type": "select"
+		}
+	},
+	"suffix": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__optional__": true,
+		"__sql_type__": "varchar(31)",
+		"__react__": {
+			"title": "Suffix (e.g. PhD, RN, Esq)"
+		}
+	},
+	"phoneCode": {
+		"__type__": "string",
+		"__regex__": "^\\d[\\d-]{0,6}$",
+		"__optional__": true,
+		"__sql_type__": "varchar(7)"
+	},
+	"phoneNumber": {
+		"__type__": "string",
+		"__maximum__": 15,
+		"__optional__": true,
+		"__sql_type__": "varchar(15)",
+		"__react__": {
+			"title": "Phone Number"
+		}
+	},
+	"phoneExt": {
+		"__type__": "string",
+		"__maximum__": 11,
+		"__optional__": true,
+		"__sql_type__": "varchar(11)",
+		"__react__": {
+			"title": "Extension"
+		}
+	},
+	"address1": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__optional__": true,
+		"__sql_type__": "varchar(31)",
+		"__react__": {
+			"title": "Street Name and Address"
+		}
+	},
+	"address2": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__optional__": true,
+		"__sql_type__": "varchar(31)",
+		"__react__": {
+			"title": "Suite / Apt / Office"
+		}
+	},
+	"city": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__optional__": true,
+		"__sql_type__": "varchar(31)",
+		"__react__": {
+			"title": "City"
+		}
+	},
+	"division": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__optional__": true,
+		"__sql_type__": "varchar(31)",
+		"__react__": {
+			"title": "State",
+			"type": "select"
+		}
+	},
+	"country": {
+		"__type__": "string",
+		"__regex__": "^[A-Z]{2}$",
+		"__optional__": true,
+		"__sql_type__": "char(2)",
+		"__react__": {
+			"title": "Country",
+			"type": "select"
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+
+	"_": "Rest errors",
+	"100": "REST_REQUEST_DATA",
+	"101": "REST_CONTENT_TYPE",
+	"102": "REST_AUTHORIZATION",
+	"200": "SERVICE_ACTION",
+	"201": "SERVICE_STATUS",
+	"202": "SERVICE_CONTENT_TYPE",
+	"203": "SERVICE_UNREACHABLE",
+	"204": "SERVICE_NOT_REGISTERED",
+	"205": "SERVICE_NO_SUCH_NOUN",
+	"206": "SERVICE_INTERNAL_KEY",
+
+	"_": "Common Errors",
+	"1000": "No rights to request/update",
+	"1001": "Invalid or missing data variable",
+	"1002": "No rights",
+
+	"_": "DB Errors",
+	"1100": "Failed to create record",
+	"1101": "Duplicate record",
+	"1102": "Failed to delete record",
+	"1103": "Failed to update record",
+	"1104": "Record can not be found",
+
+	"_": "User Errors",
+	"1200": "Email already in use",
+	"1201": "No such user / password invalid",
+	"1202": "Password forgot key already exists",
+	"1203": "Password forgot key is invalid",
+	"1204": "Password isn't strong enough",
+	"1205": "Invalid verification code",
+
+	"_": "Communication Errors",
+	"1300": "Missing Message Body",
+	"1301": "Invalid attachments data",
+	"1302": "Can't decode attachment",
+	"1303": "SMTP failed",
+
+	"_": "Payments Errors",
+	"1400": "No such merchant",
+	"1401": "Missing details for customer vault",
+	"1402": "Failed to create customer in vault"
+}
