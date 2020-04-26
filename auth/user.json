@@ -16,12 +16,15 @@
 	},
 
 	"__react__": {
-		"insert": ["email", "passwd", "locale", "title", "firstName", "lastName",
+		"insert": ["email", "passwd", "title", "firstName", "lastName",
 					"suffix", "phoneNumber", "phoneExt", "address1", "address2",
-					"city"],
-		"update": ["_id", "locale", "title", "firstName", "lastName", "suffix",
+					"city", "division"],
+		"results": ["_id", "email", "title", "firstName", "lastName", "suffix"],
+		"search": ["_id", "email", "firstName", "lastName", "phoneNumber", "address1",
+					"city", "division"],
+		"update": ["title", "firstName", "lastName", "suffix",
 					"phoneNumber", "phoneExt", "address1", "address2",
-					"city"]
+					"city", "division"]
 	},
 
 	"__name__": "User",
@@ -30,8 +33,7 @@
 		"__type__":"uuid",
 		"__optional__": true,
 		"__react__": {
-			"title": "ID",
-			"type": "readonly"
+			"title": "ID"
 		}
 	},
 	"_created": {
@@ -64,7 +66,7 @@
 		"__react__": {
 			"options": [["en-US", "U.S. English"]],
 			"title": "Language",
-			"type": "select"
+			"type": "hidden"
 		}
 	},
 	"firstName": {
@@ -172,7 +174,7 @@
 		"__sql_type__": "char(2)",
 		"__react__": {
 			"title": "Country",
-			"type": "select"
+			"type": "hidden"
 		}
 	}
 }
