@@ -2,13 +2,15 @@
 	"__mysql__": {
 		"auto_primary": false,
 		"db": "monolith",
-		"host": "memo",
+		"host": "monolith",
 		"indexes": {
-			"phoneNumber": null,
 			"user": null
 		},
 		"primary": "phoneNumber",
-		"table": "customer_claimed"
+		"table": "customer_claimed",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
 	},
 
 	"__name__": "CustomerClaimed",
@@ -22,10 +24,12 @@
 	},
 	"createdAt": {
 		"__type__": "datetime",
+		"__optional__": true,
 		"__sql_opts": "default CURRENT_TIMESTAMP"
 	},
 	"updatedAt": {
 		"__type__": "datetime",
-		"__sql_opts": "default CURRENT_TIMESTAMP"
+		"__optional__": true,
+		"__sql_opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
 	}
 }

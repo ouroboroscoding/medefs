@@ -37,9 +37,22 @@
 	"1301": "Invalid attachments data",
 	"1302": "Can't decode attachment",
 	"1303": "SMTP failed",
+	"1304": "Twilio failure",
 
 	"_": "Payments Errors",
 	"1400": "No such merchant",
 	"1401": "Missing details for customer vault",
-	"1402": "Failed to create customer in vault"
+	"1402": "Failed to create customer in vault",
+
+	"_": "Monolith Errors",
+	"1500": "Number is blocked",
+
+	"_": "Dosespot Errors",
+	"1600": "Failed to get token",
+	"1601": "HTTP Request failed",
+	"1602": "REST Error",
+
+	"_": "Payment Errors",
+	"1700": "Invalid customer ID",
+	"1701": "Transaction failure"
 }

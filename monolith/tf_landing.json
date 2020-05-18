@@ -1,0 +1,122 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"birthDay": null,
+			"createdAt": null,
+			"email": null,
+			"formid": null,
+			"landing_id": {"unique": null},
+			"lastName": null,
+			"phone": null,
+			"smpCustomerid": null,
+			"submitted_at": null,
+			"updatedAt": null
+		},
+		"primary": "id",
+		"table": "tf_landing",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "TfLanding",
+
+	"id": {
+		"__type__": "int"
+	},
+	"landing_id": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+	"landed_at": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+	"response_id": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"submitted_at": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"token": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"firstName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"lastName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"phone": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"email": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"birthDay": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"formId": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+	"path": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"addId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue1": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue2": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue3": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"smpCustomerid": {
+		"__type__": "int",
+		"__optional__": true,
+		"__sql_type__": "int(11)"
+	},
+	"complete": {
+		"__type__": "string",
+		"__sql_type__": "varchar(1)"
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

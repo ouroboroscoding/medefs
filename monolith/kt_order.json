@@ -1,0 +1,336 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"orderId": {"unique": null},
+			"customerId": null,
+			"lastName": null,
+			"state": null,
+			"orderStatus": null,
+			"phoneNumber": null,
+			"dateCreated": null,
+			"dateUpdate": null,
+			"emailAddressLastName": ["emailAddress", "lastName"],
+			"cardType": null,
+			"shipState": null
+		},
+		"primary": "id",
+		"table": "kt_order",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "KtOrder",
+
+	"id": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"orderId": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+	"clientOrderId": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+	"shipCarrier": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipMethod": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"dateCreated": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"dateUpdated": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"orderType": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"orderStatus": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"reviewStatus": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"totalAmount": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"campaignName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"customerId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"name": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"emailAddress": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"phoneNumber": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"firstName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"lastName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"companyName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"address1": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"address2": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"city": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"state": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"country": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"postalCode": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipFirstName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipLastName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipCompanyName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipAddress1": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipAddress2": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipCity": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipState": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipCountry": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipPostalCode": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"paySource": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"cardType": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"cardLast4": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"cardExpiryDate": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"achRoutingNumber": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"achAccountNumber": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"couponCode": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"agentUserId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"price": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"baseShipping": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"voiceLogNumber": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"discountPrice": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"salesTax": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipUpcharge": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"shipProfileId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"isDeclineSave": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"ipAddress": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"affId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue1": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue2": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue3": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue4": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"sourceValue5": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"currencySymbol": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"campaignId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"totalDiscount": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

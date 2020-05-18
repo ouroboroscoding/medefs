@@ -2,12 +2,15 @@
 	"__mysql__": {
 		"auto_primary": true,
 		"db": "monolith",
-		"host": "memo",
+		"host": "monolith",
 		"indexes": {
 			"customerPhone": {"unique": null}
 		},
 		"primary": "id",
-		"table": "customer_msg_phone"
+		"table": "customer_msg_phone",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
 	},
 
 	"__name__": "CustomerMsgPhone",

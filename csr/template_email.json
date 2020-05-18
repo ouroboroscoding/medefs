@@ -1,0 +1,52 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created","title","content"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"title": {"unique": null}
+		},
+		"primary": "_id",
+		"table": "template_email"
+	},
+
+	"__react__": {
+		"insert": ["title", "content"],
+		"results": ["_id","title", "content"],
+		"update": ["title", "content"]
+	},
+
+	"__name__": "TemplatesEmail",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql_opts__": "DEFAULT CURRENT_TIMESTAMP"
+	},
+	"title": {
+		"__type__":"string",
+		"__minimum__": 3,
+		"__maximum__": 32,
+		"__sql_type__": "varchar(32)",
+		"__react__": {
+			"title": "Title"
+		}
+	},
+	"content": {
+		"__type__":"string",
+		"__minimum__": 3,
+		"__maximum__": 65536,
+		"__sql_type__": "text",
+		"__react__": {
+			"title": "Template"
+		}
+	}
+}

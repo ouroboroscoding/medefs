@@ -1,0 +1,64 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"fromPhone": null,
+			"toPhone": null,
+			"createdAt": null
+		},
+		"primary": "id",
+		"table": "customer_communication",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CustomerCommunication",
+
+	"id": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"type": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"fromName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"toName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"fromPhone": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"toPhone": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"notes": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "text"
+	},
+	"replyTo": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

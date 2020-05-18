@@ -1,0 +1,163 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith_prod",
+		"indexes": {
+			"customerId": {"unique": null},
+			"patientId": null,
+			"email": null
+		},
+		"primary": "id",
+		"table": "ds_patient",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "DsPatient",
+
+	"id": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"customerId": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+	"patientId": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"prefix": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(10)"
+	},
+	"firstName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(35)"
+	},
+	"middleName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(35)"
+	},
+	"lastName": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(35)"
+	},
+	"suffix": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(10)"
+	},
+	"dateOfBirth": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(20)"
+	},
+	"gender": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(1)"
+	},
+	"email": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"address1": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(35)"
+	},
+	"address2": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(35)"
+	},
+	"city": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(35)"
+	},
+	"state": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(35)"
+	},
+	"zipCode": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(10)"
+	},
+	"phoneAdditional1": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(25)"
+	},
+	"phoneAdditional2": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(25)"
+	},
+	"phoneAdditionalType1": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(1)"
+	},
+	"phoneAdditionalType2": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(1)"
+	},
+	"primaryPhone": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(25)"
+	},
+	"primaryPhoneType": {
+		"__type__": "string",
+		"__sql_type__": "varchar(1)"
+	},
+	"weight": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"weightMetric": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(4)"
+	},
+	"nonDoseSpotMedicalRecordNumber": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"active": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(1)"
+	},
+	"encounter": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "varchar(255)"
+	},
+	"errorMessage": {
+		"__type__": "string",
+		"__optional__": true,
+		"__sql_type__": "text"
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

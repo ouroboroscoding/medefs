@@ -3,12 +3,15 @@
 		"auto_primary": false,
 		"create": ["expires", "key"],
 		"db": "monolith",
-		"host": "memo",
+		"host": "monolith",
 		"indexes": {
 			"key": {"unique": null}
 		},
 		"primary": "user",
-		"table": "forgot"
+		"table": "forgot",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
 	},
 
 	"__name__": "Forgot",

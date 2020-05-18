@@ -1,0 +1,33 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"numberAndService": ["phoneNumber", "service"]
+		},
+		"primary": "id",
+		"table": "sms_stop",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "SMSStop",
+
+	"id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+
+	"phoneNumber": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+
+	"service": {
+		"__type__": "string",
+		"__options__": ["sales", "support", "doctor"],
+		"__sql_type__": "ENUM('sales', 'support', 'doctor')"
+	}
+}

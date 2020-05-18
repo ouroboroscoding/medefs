@@ -2,12 +2,15 @@
 	"__mysql__": {
 		"auto_primary": true,
 		"db": "monolith",
-		"host": "memo",
+		"host": "monolith",
 		"indexes": {
 			"userName": {"unique": null}
 		},
 		"primary": "id",
-		"table": "user"
+		"table": "user",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
 	},
 
 	"__name__": "User",
