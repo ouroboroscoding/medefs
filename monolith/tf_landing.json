@@ -29,89 +29,88 @@
 	},
 	"landing_id": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"landed_at": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"response_id": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"submitted_at": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"token": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"firstName": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"lastName": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"phone": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"email": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"birthDay": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"formId": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"path": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"addId": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"sourceValue1": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"sourceValue2": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"sourceValue3": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"smpCustomerid": {
 		"__type__": "int",
-		"__optional__": true,
-		"__sql_type__": "int(11)"
+		"__optional__": true
 	},
 	"complete": {
 		"__type__": "string",
-		"__sql_type__": "varchar(1)"
+		"__maximum__": 1
 	},
 	"createdAt": {
 		"__type__": "datetime"

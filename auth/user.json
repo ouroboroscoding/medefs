@@ -39,12 +39,13 @@
 	"_created": {
 		"__type__":"timestamp",
 		"__optional__": true,
-		"__sql_opts__": "DEFAULT CURRENT_TIMESTAMP"
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
 	},
 	"email": {
 		"__type__":"string",
 		"__maximum__": 127,
-		"__sql_type__": "varchar(127)",
 		"__react__": {
 			"title": "Email Address"
 		}
@@ -52,7 +53,7 @@
 	"passwd": {
 		"__type__":"string",
 		"__regex__":"^[0-9a-fA-F]{72}$",
-		"__sql_type__": "char(72)",
+		"__sql__": "char(72)",
 		"__react__": {
 			"regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})",
 			"title": "Password",
@@ -62,7 +63,7 @@
 	"locale":{
 		"__type__": "string",
 		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
-		"__sql_type__": "char(5)",
+		"__sql__": "char(5)",
 		"__react__": {
 			"options": [["en-US", "U.S. English"]],
 			"title": "Language",
@@ -73,7 +74,6 @@
 		"__type__": "string",
 		"__minumum__": 1,
 		"__maximum__": 31,
-		"__sql_type__": "varchar(31)",
 		"__react__": {
 			"title": "Name"
 		}
@@ -82,7 +82,6 @@
 		"__type__": "string",
 		"__minumum__": 2,
 		"__maximum__": 31,
-		"__sql_type__": "varchar(31)",
 		"__react__": {
 			"title": "Surname"
 		}
@@ -91,7 +90,6 @@
 		"__type__": "string",
 		"__options__": ["Dr.", "Mr.", "Mrs.", "Ms."],
 		"__optional__": true,
-		"__sql_type__": "enum('Dr.', 'Mr.', 'Mrs.', 'Ms.')",
 		"__react__": {
 			"title": "Title",
 			"type": "select"
@@ -101,7 +99,6 @@
 		"__type__": "string",
 		"__maximum__": 31,
 		"__optional__": true,
-		"__sql_type__": "varchar(31)",
 		"__react__": {
 			"title": "Suffix (e.g. PhD, RN, Esq)"
 		}
@@ -110,13 +107,12 @@
 		"__type__": "string",
 		"__regex__": "^\\d[\\d-]{0,6}$",
 		"__optional__": true,
-		"__sql_type__": "varchar(7)"
+		"__sql__": "varchar(7)"
 	},
 	"phoneNumber": {
 		"__type__": "string",
 		"__maximum__": 15,
 		"__optional__": true,
-		"__sql_type__": "varchar(15)",
 		"__react__": {
 			"title": "Phone Number"
 		}
@@ -125,7 +121,6 @@
 		"__type__": "string",
 		"__maximum__": 11,
 		"__optional__": true,
-		"__sql_type__": "varchar(11)",
 		"__react__": {
 			"title": "Extension"
 		}
@@ -134,7 +129,6 @@
 		"__type__": "string",
 		"__maximum__": 31,
 		"__optional__": true,
-		"__sql_type__": "varchar(31)",
 		"__react__": {
 			"title": "Street Name and Address"
 		}
@@ -143,7 +137,6 @@
 		"__type__": "string",
 		"__maximum__": 31,
 		"__optional__": true,
-		"__sql_type__": "varchar(31)",
 		"__react__": {
 			"title": "Suite / Apt / Office"
 		}
@@ -152,7 +145,6 @@
 		"__type__": "string",
 		"__maximum__": 31,
 		"__optional__": true,
-		"__sql_type__": "varchar(31)",
 		"__react__": {
 			"title": "City"
 		}
@@ -161,7 +153,6 @@
 		"__type__": "string",
 		"__maximum__": 31,
 		"__optional__": true,
-		"__sql_type__": "varchar(31)",
 		"__react__": {
 			"title": "State",
 			"type": "select"
@@ -171,7 +162,7 @@
 		"__type__": "string",
 		"__regex__": "^[A-Z]{2}$",
 		"__optional__": true,
-		"__sql_type__": "char(2)",
+		"__sql__": "char(2)",
 		"__react__": {
 			"title": "Country",
 			"type": "hidden"

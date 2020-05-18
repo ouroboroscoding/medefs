@@ -20,106 +20,106 @@
 	},
 	"firstName": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"lastName": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"email": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"userName": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"password": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"userRole": {
 		"__type__": "string",
-		"__sql_type__": "varchar(30)"
+		"__maximum__": 30
 	},
 	"practiceStates": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"doctorNPI": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"doctorDea": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practiceClinicName": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practicePhoneNumber": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practiceAddress1": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practiceAddress2": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practiceCity": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practiceState": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practicePostalCode": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"practiceCountry": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"dsClinicId": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"dsClinicianId": {
 		"__type__": "string",
-		"__optional__": true,
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255,
+		"__optional__": true
 	},
 	"activeFlag": {
 		"__type__": "string",
+		"__maximum__": 1,
 		"__optional__": true,
-		"__sql_type__": "varchar(1)",
-		"__sql_opts__": "default 'Y'"
+		"__sql__": {
+			"opts": "default 'Y'"
+		}
 	},
 	"createdAt": {
-		"__type__": "datetime",
-		"__sql_type__": "DATETIME"
+		"__type__": "datetime"
 	},
 	"updatedAt": {
-		"__type__": "datetime",
-		"__sql_type__": "DATETIME"
+		"__type__": "datetime"
 	}
 }

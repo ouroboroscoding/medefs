@@ -17,21 +17,23 @@
 	"_id": {
 		"__type__": "string",
 		"__regex__": "^[a-zA-Z0-9_-]{6,16}$",
-		"__sql_type__": "char(16)"
+		"__sql__": "char(16)"
 	},
-
 	"_created": {
 		"__type__": "timestamp",
-		"__sql_opts__": "default current_timestamp"
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
 	},
-
 	"_updated": {
 		"__type__": "timestamp",
-		"__sql_opts__": "default current_timestamp on update current_timestamp"
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
 	},
-
 	"card_hash": {
 		"__type__": "base64",
-		"__sql_type__": "char(64)"
+		"__maximum__": 64,
+		"__sql__": "char(64)"
 	}
 }

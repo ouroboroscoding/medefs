@@ -17,7 +17,7 @@
 
 	"phoneNumber": {
 		"__type__": "string",
-		"__sql_type__": "char(11)"
+		"__sql__": "char(11)"
 	},
 	"user": {
 		"__type__": "int"
@@ -25,11 +25,15 @@
 	"createdAt": {
 		"__type__": "datetime",
 		"__optional__": true,
-		"__sql_opts": "default CURRENT_TIMESTAMP"
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
 	},
 	"updatedAt": {
 		"__type__": "datetime",
 		"__optional__": true,
-		"__sql_opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
 	}
 }

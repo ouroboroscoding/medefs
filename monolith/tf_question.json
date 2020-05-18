@@ -28,106 +28,136 @@
 	},
 	"questionId": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"ref": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"title": {
 		"__type__": "string",
-		"__sql_type__": "varchar(4095)"
+		"__maximum__": 4095
 	},
 	"type": {
 		"__type__": "string",
-		"__sql_type__": "varchar(255)"
+		"__maximum__": 255
 	},
 	"name": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"gender": {
 		"__type__": "string",
+		"__maximum__": 255,
 		"__optional__": true,
-		"__sql_type__": "varchar(255)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"fieldType": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"dataType": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"variant": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"fullWidth": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"autoFocus": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"pageId": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"pageDisplayOrder": {
 		"__type__": "float",
 		"__optional__": true,
-		"__sql_opts__": "default '0'"
+		"__sql__": {
+			"opts": "default '0'"
+		}
 	},
 	"pageTitle": {
 		"__type__": "string",
+		"__maximum__": 4095,
 		"__optional__": true,
-		"__sql_type__": "varchar(4095)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"inPageDisplayOrder": {
 		"__type__": "float",
 		"__optional__": true,
-		"__sql_opts__": "default '0'"
+		"__sql__": {
+			"opts": "default '0'"
+		}
 	},
 	"splitLastOption": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"includeQuestion": {
 		"__type__": "string",
+		"__maximum__": 255,
 		"__optional__": true,
-		"__sql_type__": "varchar(255)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"row": {
 		"__type__": "string",
+		"__maximum__": 45,
 		"__optional__": true,
-		"__sql_type__": "varchar(45)",
-		"__sql_opts__": "default ''"
+		"__sql__": {
+			"opts": "default ''"
+		}
 	},
 	"activeFlag": {
 		"__type__": "string",
-		"__sql_type__": "varchar(1)",
-		"__sql_opts__": "default 'Y'"
+		"__maximum__": 1,
+		"__sql__": {
+			"opts": "default 'Y'"
+		}
 	},
 	"createdAt": {
 		"__type__": "datetime"
