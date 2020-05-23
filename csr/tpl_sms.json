@@ -46,7 +46,8 @@
 		"__minimum__": 3,
 		"__maximum__": 65536,
 		"__react__": {
-			"title": "Template"
+			"title": "Template",
+			"type": "textarea"
 		}
 	}
 }
