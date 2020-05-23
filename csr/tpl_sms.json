@@ -8,7 +8,7 @@
 			"title": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "template_email"
+		"table": "tpl_sms"
 	},
 
 	"__react__": {
@@ -17,7 +17,7 @@
 		"update": ["title", "content"]
 	},
 
-	"__name__": "TemplatesEmail",
+	"__name__": "TemplatesSMS",
 
 	"_id": {
 		"__type__":"uuid",
