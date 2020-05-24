@@ -12,7 +12,7 @@
 	},
 
 	"__react__": {
-		"insert": ["title", "content"],
+		"create": ["title", "content"],
 		"results": ["_id","title", "content"],
 		"update": ["title", "content"]
 	},
