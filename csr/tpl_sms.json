@@ -13,7 +13,7 @@
 
 	"__react__": {
 		"create": ["title", "content"],
-		"results": ["_id","title", "content"],
+		"results": ["title", "content"],
 		"update": ["title", "content"]
 	},
 
