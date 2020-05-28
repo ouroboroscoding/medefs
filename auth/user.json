@@ -16,7 +16,7 @@
 	},
 
 	"__react__": {
-		"insert": ["email", "passwd", "title", "firstName", "lastName",
+		"create": ["email", "passwd", "title", "firstName", "lastName",
 					"suffix", "phoneNumber", "phoneExt", "address1", "address2",
 					"city", "division"],
 		"results": ["_id", "email", "title", "firstName", "lastName", "suffix"],
