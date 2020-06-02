@@ -8,10 +8,10 @@
 			"key": {"unique": null}
 		},
 		"primary": "_user",
-		"table": "forgot"
+		"table": "auth_forgot"
 	},
 
-	"__name__": "Forgot",
+	"__name__": "Auth_Forgot",
 
 	"_user": {
 		"__type__":"uuid"

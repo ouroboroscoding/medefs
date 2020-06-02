@@ -2,17 +2,17 @@
 	"__mysql__": {
 		"auto_primary": false,
 		"create": ["_created", "_updated", "card_hash"],
-		"db": "payment",
-		"host": "payment",
+		"db": "mems",
+		"host": "primary",
 		"indexes": {},
 		"primary": "_id",
-		"table": "customer",
+		"table": "payment_customer",
 		"engine": "InnoDB",
 		"charset": "utf8mb4",
 		"collate": "utf8mb4_bin"
 	},
 
-	"__name__": "Customer",
+	"__name__": "Payment_Customer",
 
 	"_id": {
 		"__type__": "string",

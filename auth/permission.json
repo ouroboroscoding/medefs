@@ -7,10 +7,10 @@
 		"indexes": {
 			"ui_user_name": {"unique": ["user", "name"]}
 		},
-		"table": "permission"
+		"table": "auth_permission"
 	},
 
-	"__name__": "Permission",
+	"__name__": "Auth_Permission",
 
 	"_id": {
 		"__type__":"uint",

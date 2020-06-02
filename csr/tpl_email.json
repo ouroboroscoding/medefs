@@ -8,7 +8,7 @@
 			"title": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "tpl_email"
+		"table": "csr_tpl_email"
 	},
 
 	"__react__": {
@@ -17,7 +17,7 @@
 		"update": ["title", "content"]
 	},
 
-	"__name__": "TemplatesEmail",
+	"__name__": "CSR_TemplatesEmail",
 
 	"_id": {
 		"__type__":"uuid",
