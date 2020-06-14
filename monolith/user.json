@@ -20,98 +20,166 @@
 	},
 	"firstName": {
 		"__type__": "string",
-		"__maximum__": 255
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Name"
+		}
 	},
 	"lastName": {
 		"__type__": "string",
-		"__maximum__": 255
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Surname"
+		}
 	},
 	"email": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "E-mail"
+		}
+	},
+	"cellNumber": {
+		"__type__": "string",
+		"__maximum__": 11,
+		"__optional__": true,
+		"__react__": {
+			"title": "Cell Phone"
+		}
 	},
 	"userName": {
 		"__type__": "string",
-		"__maximum__": 255
+		"__maximum__": 255,
+		"__react__": {
+			"title": "User Name"
+		}
 	},
 	"password": {
 		"__type__": "string",
-		"__maximum__": 255
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Password"
+		}
 	},
 	"userRole": {
 		"__type__": "string",
-		"__maximum__": 30
+		"__maximum__": 30,
+		"__react__": {
+			"title": "Role"
+		}
 	},
 	"practiceStates": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice States"
+		}
 	},
 	"doctorNPI": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "NPI"
+		}
 	},
 	"doctorDea": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "DEA"
+		}
 	},
 	"practiceClinicName": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Clinic Name"
+		}
 	},
 	"practicePhoneNumber": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice"
+		}
 	},
 	"practiceAddress1": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Address"
+		}
 	},
 	"practiceAddress2": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Address"
+		}
 	},
 	"practiceCity": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice City"
+		}
 	},
 	"practiceState": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice State"
+		}
 	},
 	"practicePostalCode": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Zip Code"
+		}
 	},
 	"practiceCountry": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Country"
+		}
 	},
 	"dsClinicId": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "DoseSpot Clinic ID"
+		}
 	},
 	"dsClinicianId": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "DoseSpot Clinician ID"
+		}
 	},
 	"activeFlag": {
 		"__type__": "string",
 		"__maximum__": 1,
 		"__optional__": true,
+		"__react__": {
+			"title": "Active"
+		},
 		"__sql__": {
 			"opts": "default 'Y'"
 		}
