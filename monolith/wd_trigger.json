@@ -7,7 +7,7 @@
 			"customerId": {"unique": null}
 		},
 		"primary": "id",
-		"table": "wd_eligibility",
+		"table": "wd_trigger",
 		"engine": "InnoDB",
 		"charset": "utf8mb4",
 		"collate": "utf8mb4_0900_ai_ci"
@@ -27,18 +27,22 @@
 		"__options__": ["initial", "refill"]
 	},
 	"triggered": {
-		"__type__": "datetime",
+		"__type__": "datetime"
 	},
 	"opened": {
 		"__type__": "datetime",
+		"__optional__": true
 	},
 	"shipped": {
 		"__type__": "datetime",
+		"__optional__": true
 	},
 	"createdAt": {
-		"__type__": "datetime"
+		"__type__": "datetime",
+		"__optional__": true
 	},
 	"updatedAt": {
-		"__type__": "datetime"
+		"__type__": "datetime",
+		"__optional__": true
 	}
 }
