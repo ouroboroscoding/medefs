@@ -1,0 +1,24 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["_created"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {},
+		"primary": "_id",
+		"table": "csr_escalate_agent"
+	},
+
+	"__name__": "CSR_EscalateAgent",
+
+	"_id": {
+		"__type__":"int"
+	},
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	}
+}
