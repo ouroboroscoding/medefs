@@ -12,7 +12,7 @@
 			"email": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "auth_user"
+		"table": "auth_user_crm"
 	},
 
 	"__react__": {
@@ -27,7 +27,7 @@
 					"city", "division"]
 	},
 
-	"__name__": "Auth_User",
+	"__name__": "Auth_UserCRM",
 
 	"_id": {
 		"__type__":"uuid",
@@ -60,7 +60,7 @@
 			"type": "password"
 		}
 	},
-	"locale":{
+	"locale": {
 		"__type__": "string",
 		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
 		"__sql__": "char(5)",
