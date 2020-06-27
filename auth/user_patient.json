@@ -1,0 +1,77 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"changes": ["user"],
+		"create": ["_created", "email", "passwd", "locale", "type", "crm_patient"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"email": {"unique": null}
+		},
+		"primary": "_id",
+		"table": "auth_user_patient"
+	},
+
+	"__react__": {
+		"create": ["email", "passwd", "type", "crm_patient"],
+		"results": ["_id", "email", "type", "crm_patient"],
+		"search": ["_id", "email", "type", "crm_patient"],
+		"update": ["email", "type", "crm_patient"]
+	},
+
+	"__name__": "Auth_UserPatient",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"email": {
+		"__type__":"string",
+		"__maximum__": 127,
+		"__react__": {
+			"title": "Email Address"
+		}
+	},
+	"passwd": {
+		"__type__":"string",
+		"__regex__":"^[0-9a-fA-F]{72}$",
+		"__sql__": "char(72)",
+		"__react__": {
+			"regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})",
+			"title": "Password",
+			"type": "password"
+		}
+	},
+	"locale": {
+		"__type__": "string",
+		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
+		"__sql__": "char(5)",
+		"__react__": {
+			"options": [["en-US", "U.S. English"]],
+			"title": "Language",
+			"type": "hidden"
+		}
+	},
+	"type": {
+		"__type__": "string",
+		"__options__": ["knk", "mems"],
+		"__react__": {
+			"options": [["knk", "Konnektive"], ["mems", "ME Micro Services"]],
+			"title": "CRM Type"
+		}
+	},
+	"crm_patient": {
+		"__type__": "string",
+		"__maximum__": 36
+	}
+}
