@@ -12,7 +12,7 @@
 			"email": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "auth_user_crm"
+		"table": "auth_user"
 	},
 
 	"__react__": {
@@ -27,7 +27,7 @@
 					"city", "division"]
 	},
 
-	"__name__": "Auth_UserCRM",
+	"__name__": "Auth_User",
 
 	"_id": {
 		"__type__":"uuid",

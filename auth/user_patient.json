@@ -70,7 +70,7 @@
 			"title": "CRM Type"
 		}
 	},
-	"crm_patient": {
+	"crm_id": {
 		"__type__": "string",
 		"__maximum__": 36
 	}

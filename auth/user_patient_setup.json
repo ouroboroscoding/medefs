@@ -1,0 +1,32 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"changes": ["user"],
+		"create": ["_created", "email", "passwd", "locale", "type", "crm_patient"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {},
+		"primary": "_id",
+		"table": "auth_user_patient_setup"
+	},
+
+	"__name__": "Auth_UserPatientSetup",
+
+	"_id": {
+		"__type__": "string",
+		"__minimum__": 32,
+		"__maximum__": 32
+	},
+	"type": {
+		"__type__": "string",
+		"__options__": ["knk", "mems"],
+		"__react__": {
+			"options": [["knk", "Konnektive"], ["mems", "ME Micro Services"]],
+			"title": "CRM Type"
+		}
+	},
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	}
+}
