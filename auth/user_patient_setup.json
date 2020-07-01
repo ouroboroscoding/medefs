@@ -2,7 +2,7 @@
 	"__mysql__": {
 		"auto_primary": false,
 		"changes": ["user"],
-		"create": ["_created", "email", "passwd", "locale", "type", "crm_patient"],
+		"create": ["_created", "type", "crm_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {},
@@ -16,6 +16,13 @@
 		"__type__": "string",
 		"__minimum__": 32,
 		"__maximum__": 32
+	},
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
 	},
 	"type": {
 		"__type__": "string",
