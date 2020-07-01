@@ -1,7 +1,6 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"changes": ["user"],
 		"create": ["_created", "type", "crm_id"],
 		"db": "mems",
 		"host": "primary",
