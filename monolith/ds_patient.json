@@ -2,7 +2,7 @@
 	"__mysql__": {
 		"auto_primary": true,
 		"db": "monolith",
-		"host": "monolith_prod",
+		"host": "monolith",
 		"indexes": {
 			"customerId": {"unique": null},
 			"patientId": null,
