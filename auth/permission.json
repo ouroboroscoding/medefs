@@ -36,5 +36,10 @@
 		"__minimum__": 1,
 		"__maximum__": 15,
 		"__sql__": "tinyint unsigned"
+	},
+	"idents": {
+		"__type__": "string",
+		"__maximum__": "65536",
+		"__optional__": true
 	}
 }
