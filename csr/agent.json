@@ -1,0 +1,35 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "memo_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"memo_id": {"unique": null}
+		},
+		"table": "csr_agent"
+	},
+
+	"__name__": "CSR_Agent",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"memo_id": {
+		"__type__":"int",
+		"__react__": {
+			"title": "Memo ID"
+		}
+	}
+}

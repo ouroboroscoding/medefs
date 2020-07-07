@@ -7,7 +7,6 @@
 		"indexes": {
 			"title": {"unique": null}
 		},
-		"primary": "_id",
 		"table": "csr_tpl_sms",
 		"charset": "utf8mb4",
 		"collate": "utf8mb4_0900_ai_ci"
