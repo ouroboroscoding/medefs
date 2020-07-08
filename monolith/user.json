@@ -16,7 +16,8 @@
 	"__name__": "User",
 
 	"id": {
-		"__type__": "int"
+		"__type__": "int",
+		"__optional__": true
 	},
 	"firstName": {
 		"__type__": "string",

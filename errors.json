@@ -46,6 +46,9 @@
 
 	"_": "Monolith Errors",
 	"1500": "Number is blocked",
+	"1501": "Username already in use",
+	"1502": "Password isn't strong enough",
+	"1503": "User inactive",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",
