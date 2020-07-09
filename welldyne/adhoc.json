@@ -24,7 +24,7 @@
 	},
 	"type": {
 		"__type__": "string",
-		"__options__": ["Update Address", "Cancel Order"]
+		"__options__": ["Update Address", "Cancel Order", "Remove Order", "Extend Eligibility"]
 	},
 	"user": {
 		"__type__": "int",
