@@ -39,12 +39,14 @@
 	},
 	"user": {
 		"__type__": "int",
+		"__optional__": true,
 		"__sql__": {
 			"opts": "default 0"
 		}
 	},
 	"ready": {
 		"__type__": "bool",
+		"__optional__": true,
 		"__sql__": {
 			"opts": "default 0"
 		}
