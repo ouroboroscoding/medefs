@@ -20,7 +20,10 @@
 		"__optional__": true
 	},
 	"customerId": {
-		"__type__": "int"
+		"__type__": "int",
+		"__react__": {
+			"title": "KNK ID"
+		}
 	},
 	"queue": {
 		"__type__": "string",

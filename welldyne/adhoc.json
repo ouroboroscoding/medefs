@@ -20,11 +20,17 @@
 		"__optional__": true
 	},
 	"customerId": {
-		"__type__": "int"
+		"__type__": "int",
+		"__react__": {
+			"title": "KNK ID"
+		}
 	},
 	"type": {
 		"__type__": "string",
-		"__options__": ["Update Address", "Cancel Order", "Remove Order", "Extend Eligibility"]
+		"__options__": ["Update Address", "Cancel Order", "Remove Error", "Extend Eligibility"],
+		"__react__": {
+			"type": "select"
+		}
 	},
 	"user": {
 		"__type__": "int"
