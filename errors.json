@@ -43,6 +43,8 @@
 	"1400": "No such merchant",
 	"1401": "Missing details for customer vault",
 	"1402": "Failed to create customer in vault",
+	"1403": "Invalid customer ID",
+	"1404": "Transaction failure",
 
 	"_": "Monolith Errors",
 	"1500": "Number is blocked",
@@ -55,7 +57,10 @@
 	"1601": "HTTP Request failed",
 	"1602": "REST Error",
 
-	"_": "Payment Errors",
-	"1700": "Invalid customer ID",
-	"1701": "Transaction failure"
+	"_": "CSR Errors",
+
+	"_": "WellDyne Errors",
+
+	"_": "Patient Errors",
+	"1900": "Invalid CRM type"
 }
