@@ -2,14 +2,14 @@
 	"__mysql__": {
 		"auto_primary": "UUID()",
 		"changes": ["user"],
-		"create": ["_created", "email", "passwd", "locale", "type", "crm_id"],
+		"create": ["_created", "email", "passwd", "locale", "crm_id_type", "crm_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
 			"email": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "auth_user_patient"
+		"table": "patient_account"
 	},
 
 	"__react__": {
@@ -19,7 +19,7 @@
 		"update": ["email", "type", "crm_id"]
 	},
 
-	"__name__": "Auth_UserPatient",
+	"__name__": "Patient_Account",
 
 	"_id": {
 		"__type__":"uuid",
@@ -62,7 +62,7 @@
 			"type": "hidden"
 		}
 	},
-	"type": {
+	"crm_id_type": {
 		"__type__": "string",
 		"__options__": ["knk", "mems"],
 		"__react__": {

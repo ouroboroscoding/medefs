@@ -1,15 +1,15 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["_created", "type", "crm_id"],
+		"create": ["_created", "crm_id_type", "crm_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {},
 		"primary": "_id",
-		"table": "auth_user_patient_setup"
+		"table": "patient_account_setup"
 	},
 
-	"__name__": "Auth_UserPatientSetup",
+	"__name__": "Patient_AccountSetup",
 
 	"_id": {
 		"__type__": "string",
@@ -23,7 +23,7 @@
 			"opts": "default CURRENT_TIMESTAMP"
 		}
 	},
-	"type": {
+	"crm_id_type": {
 		"__type__": "string",
 		"__options__": ["knk", "mems"],
 		"__react__": {

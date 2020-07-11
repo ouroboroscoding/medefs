@@ -1,0 +1,30 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["expires", "key"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"key": {"unique": null}
+		},
+		"primary": "_account",
+		"table": "patient_forgot"
+	},
+
+	"__name__": "Auth_Forgot",
+
+	"_account": {
+		"__type__":"uuid"
+	},
+	"expires": {
+		"__type__": "timestamp",
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"key": {
+		"__type__": "string",
+		"__regex__": "^[0-9a-f]{32}$",
+		"__sql__": "char(32)"
+	}
+}
