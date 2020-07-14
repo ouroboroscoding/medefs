@@ -23,6 +23,16 @@
 			"opts": "default CURRENT_TIMESTAMP"
 		}
 	},
+	"attempts": {
+		"__type__": "uint",
+	},
+	"email": {
+		"__type__":"string",
+		"__maximum__": 127,
+		"__react__": {
+			"title": "Email Address"
+		}
+	},
 	"dob": {
 		"__type__": "date"
 	},

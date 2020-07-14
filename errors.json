@@ -15,7 +15,6 @@
 	"_": "Common Errors",
 	"1000": "No rights to request/update",
 	"1001": "Invalid or missing data variable",
-	"1002": "No rights",
 
 	"_": "DB Errors",
 	"1100": "Failed to create record",
@@ -62,5 +61,11 @@
 	"_": "WellDyne Errors",
 
 	"_": "Patient Errors",
-	"1900": "Invalid CRM type"
+	"1900": "Email already in use",
+	"1901": "No such user / password invalid",
+	"1902": "Password forgot key already exists",
+	"1903": "Password forgot key is invalid",
+	"1904": "Password isn't strong enough",
+	"1905": "Invalid verification code",
+	"1906": "Too many attempts to validate",
 }

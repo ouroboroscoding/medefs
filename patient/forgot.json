@@ -11,7 +11,7 @@
 		"table": "patient_forgot"
 	},
 
-	"__name__": "Auth_Forgot",
+	"__name__": "Patient_Forgot",
 
 	"_account": {
 		"__type__":"uuid"
