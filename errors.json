@@ -68,4 +68,5 @@
 	"1904": "Password isn't strong enough",
 	"1905": "Invalid verification code",
 	"1906": "Too many attempts to validate",
+	"1907": "Failed Setup Attempt"
 }
