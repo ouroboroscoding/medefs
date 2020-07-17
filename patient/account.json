@@ -52,6 +52,9 @@
 			"type": "password"
 		}
 	},
+	"verified": {
+		"__type__": "bool"
+	},
 	"locale": {
 		"__type__": "string",
 		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
