@@ -2,7 +2,7 @@
 	"__mysql__": {
 		"auto_primary": "UUID()",
 		"changes": ["user"],
-		"create": ["_created", "email", "passwd", "locale", "crm_type", "crm_id", "rx_type", "rx_id"],
+		"create": ["_created", "email", "passwd", "verified", "locale", "crm_type", "crm_id", "rx_type", "rx_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -53,7 +53,10 @@
 		}
 	},
 	"verified": {
-		"__type__": "bool"
+		"__type__": "bool",
+		"__sql__": {
+			"opts": "default 0"
+		}
 	},
 	"locale": {
 		"__type__": "string",

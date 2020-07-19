@@ -57,6 +57,7 @@
 	"1602": "REST Error",
 
 	"_": "CSR Errors",
+	"1700": "Address Verification Failed",
 
 	"_": "WellDyne Errors",
 
@@ -68,5 +69,6 @@
 	"1904": "Password isn't strong enough",
 	"1905": "Invalid verification code",
 	"1906": "Too many attempts to validate",
-	"1907": "Failed Setup Attempt"
+	"1907": "Failed Setup Attempt",
+	"1908": "Account not verified"
 }
