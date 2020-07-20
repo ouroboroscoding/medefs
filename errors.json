@@ -57,7 +57,8 @@
 	"1602": "REST Error",
 
 	"_": "CSR Errors",
-	"1700": "Address Verification Failed",
+	"1700": "USPS Connecton Failure",
+	"1701": "USPS Address invalid",
 
 	"_": "WellDyne Errors",
 
