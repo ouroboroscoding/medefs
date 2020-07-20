@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["_created", "attempts", "email", "dob", "lname", "crm_type", "crm_id", "rx_type", "rx_id"],
+		"create": ["_created", "attempts", "email", "dob", "lname", "crm_type", "crm_id", "rx_type", "rx_id", "user"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {},
