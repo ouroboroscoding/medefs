@@ -8,19 +8,13 @@
 			"key": {"unique": null}
 		},
 		"primary": "_account",
-		"table": "patient_forgot"
+		"table": "patient_verify"
 	},
 
 	"__name__": "Patient_Forgot",
 
 	"_account": {
 		"__type__":"uuid"
-	},
-	"expires": {
-		"__type__": "timestamp",
-		"__sql__": {
-			"opts": "default CURRENT_TIMESTAMP"
-		}
 	},
 	"key": {
 		"__type__": "string",
