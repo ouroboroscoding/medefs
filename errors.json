@@ -59,6 +59,7 @@
 	"_": "CSR Errors",
 	"1700": "USPS Connecton Failure",
 	"1701": "USPS Address invalid",
+	"1702": "USPS City invalid",
 
 	"_": "WellDyne Errors",
 
