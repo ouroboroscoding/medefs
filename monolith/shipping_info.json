@@ -28,10 +28,12 @@
 		"__type__": "date"
 	},
 	"customerId": {
-		"__type__": "int"
+		"__type__": "int",
+		"__optional__": true
 	},
 	"misc": {
-		"__type__": "json"
+		"__type__": "json",
+		"__optional__": true
 	},
 	"createdAt": {
 		"__type__": "datetime"
