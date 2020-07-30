@@ -52,7 +52,7 @@
 	"failCount": {
 		"__type__": "uint",
 		"__react__": {
-			"title": "Reason for failure"
+			"title": "Failure Count"
 		}
 	},
 	"ready": {
