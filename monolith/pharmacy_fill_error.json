@@ -35,11 +35,18 @@
 			"title": "KNK Order ID"
 		}
 	},
-	"type": {
+	"list": {
 		"__type__": "string",
 		"__options__": ["fill", "outreach", "adhoc"],
 		"__react__": {
 			"title": "Trigger Type"
+		}
+	},
+	"type": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__react__": {
+			"title": "Secondary Type"
 		}
 	},
 	"reason": {
