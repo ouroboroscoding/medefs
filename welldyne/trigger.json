@@ -1,0 +1,63 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "crm_type", "crm_id", "crm_order", "rx_id", "type", "opened", "shipped"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_cot": {"unique": ["crm_type", "crm_id", "crm_order", "type"]}
+		},
+		"table": "welldyne_trigger",
+		"engine": "InnoDB"
+	},
+
+	"__name__": "WelldyneTrigger",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"crm_type": {
+		"__type__": "string",
+		"__options__": ["knk", "ms"]
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+
+	"crm_order": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+
+	"rx_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["initial", "refill", "update"]
+	},
+
+	"opened": {
+		"__type__": "datetime",
+		"__optional__": true
+	},
+
+	"shipped": {
+		"__type__": "datetime",
+		"__optional__": true
+	}
+}
