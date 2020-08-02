@@ -1,0 +1,37 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "name", "pharmacyId"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"pharmacyId": {"unique": null}
+		},
+		"table": "prescriptions_pharmacy",
+		"engine": "InnoDB"
+	},
+
+	"__name__": "Prescriptions_Pharmacy",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"name": {
+		"__type__": "string",
+		"__maximum__": 31
+	},
+
+	"pharmacyId": {
+		"__type__": "uint"
+	}
+}
