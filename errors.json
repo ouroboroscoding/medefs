@@ -16,6 +16,7 @@
 	"1000": "No rights to request/update",
 	"1001": "Invalid or missing data variable",
 	"1002": "No rights",
+	"1003": "Invalid CRM Type",
 
 	"_": "DB Errors",
 	"1100": "Failed to create record",
