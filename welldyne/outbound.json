@@ -28,17 +28,26 @@
 
 	"crm_type": {
 		"__type__": "string",
-		"__options__": ["knk", "mems"]
+		"__options__": ["knk", "mems"],
+		"__react__": {
+			"title": "CRM"
+		}
 	},
 
 	"crm_id": {
 		"__type__": "string",
-		"__maximum__": 36
+		"__maximum__": 36,
+		"__react__": {
+			"title": "ID"
+		}
 	},
 
 	"crm_order": {
 		"__type__": "string",
-		"__maximum__": 36
+		"__maximum__": 36,
+		"__react__": {
+			"title": "Order"
+		}
 	},
 
 	"queue": {
