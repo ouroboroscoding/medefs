@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
-		"auto_primary": false,
-		"create": ["_created", "crm_type", "crm_id", "crm_order", "type", "memo_user"],
+		"auto_primary": "UUID",
+		"create": ["_created", "_updated", "crm_type", "crm_id", "crm_order", "type", "attempts"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -26,19 +26,36 @@
 		}
 	},
 
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
 	"crm_type": {
 		"__type__": "string",
-		"__options__": ["knk", "mems"]
+		"__options__": ["knk", "mems"],
+		"__react__": {
+			"title": "CRM"
+		}
 	},
 
 	"crm_id": {
 		"__type__": "string",
-		"__maximum__": 36
+		"__maximum__": 36,
+		"__react__": {
+			"title": "ID"
+		}
 	},
 
 	"crm_order": {
 		"__type__": "string",
-		"__maximum__": 36
+		"__maximum__": 36,
+		"__react__": {
+			"title": "Order"
+		}
 	},
 
 	"type": {
@@ -49,7 +66,11 @@
 		}
 	},
 
-	"memo_user": {
-		"__type__": "int"
+	"attempts": {
+		"__type__": "uint",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 1"
+		}
 	}
 }

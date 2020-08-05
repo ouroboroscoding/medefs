@@ -1,11 +1,11 @@
 {
     "__mysql__": {
         "auto_primary": "UUID()",
-        "create": ["_created", "_updated", "crm_type", "crm_id", "number"],
+        "create": ["_created", "_updated", "member_id", "number"],
         "db": "mems",
         "host": "primary",
         "indexes": {
-            "ui_customer": {"unique": ["crm_type", "crm_id"]}
+            "member_id": {"unique": null}
         },
         "table": "welldyne_rx_number",
         "engine": "InnoDB"
@@ -34,12 +34,7 @@
         }
     },
 
-    "crm_type": {
-        "__type__": "string",
-        "__options__": ["knk", "ms"]
-    },
-
-    "crm_id": {
+    "member_id": {
         "__type__": "string",
         "__maximum__": 36
     },

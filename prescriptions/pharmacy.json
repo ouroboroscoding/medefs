@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "name", "pharmacyId"],
+		"create": ["_created", "name", "pharmacyId", "reports_to"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -33,5 +33,11 @@
 
 	"pharmacyId": {
 		"__type__": "uint"
+	},
+
+	"reports_to": {
+		"__type__": "string",
+		"__maximum__": 65536,
+		"__optional__": true
 	}
 }

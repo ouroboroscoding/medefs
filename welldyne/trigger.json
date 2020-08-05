@@ -1,11 +1,11 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "crm_type", "crm_id", "crm_order", "rx_id", "type", "opened", "shipped"],
+		"create": ["_created", "_updated", "crm_type", "crm_id", "crm_order", "medication", "rx_id", "type", "opened", "shipped", "raw"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"ui_cot": {"unique": ["crm_type", "crm_id", "crm_order", "type"]}
+			"ui_cotm": {"unique": ["crm_type", "crm_id", "crm_order", "type", "medication"]}
 		},
 		"table": "welldyne_trigger",
 		"engine": "InnoDB"
@@ -26,6 +26,14 @@
 		}
 	},
 
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
 	"crm_type": {
 		"__type__": "string",
 		"__options__": ["knk", "ms"]
@@ -39,6 +47,11 @@
 	"crm_order": {
 		"__type__": "string",
 		"__maximum__": 36
+	},
+
+	"medication": {
+		"__type__": "string",
+		"__maximum__": 255
 	},
 
 	"rx_id": {
@@ -59,5 +72,10 @@
 	"shipped": {
 		"__type__": "datetime",
 		"__optional__": true
+	},
+
+	"raw": {
+		"__type__": "string",
+		"__maximum__": 255
 	}
 }
