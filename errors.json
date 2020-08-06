@@ -58,5 +58,8 @@
 
 	"_": "Payment Errors",
 	"1700": "Invalid customer ID",
-	"1701": "Transaction failure"
+	"1701": "Transaction failure",
+
+	"_": "WellDyne Errors",
+	"1800": "No order in record"
 }
