@@ -60,7 +60,7 @@
 
 	"list": {
 		"__type__": "string",
-		"__options__": ["fill", "outreach", "adhoc"],
+		"__options__": ["fill", "outbound", "adhoc"],
 		"__react__": {
 			"title": "Trigger Type"
 		}
