@@ -1,0 +1,64 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"ui_gts": ["groupId", "type", "step"]
+		},
+		"primary": "code",
+		"table": "sms_template",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "SMSTemplate",
+
+	"id": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"groupId": {
+		"__type__": "uint",
+		"__sql__": {
+			"type": "smallint(5)"
+		}
+	},
+	"type": {
+		"__type__": "string",
+		"__options__": ["async", "av", "sms", "email"]
+	},
+	"step": {
+		"__type__": "uint",
+		"__sql__": {
+			"type": "tinyint(3)"
+		}
+	},
+	"title": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__sql__": "varchar(31)"
+	},
+	"content": {
+		"__type__": "string",
+		"__maximum__": 1024,
+		"__sql__": {
+			"type": "varchar(1024)"
+		}
+	},
+	"createdAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"updatedAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	}
+}

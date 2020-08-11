@@ -15,6 +15,8 @@
 	"_": "Common Errors",
 	"1000": "No rights to request/update",
 	"1001": "Invalid or missing data variable",
+	"1002": "No rights",
+	"1003": "Invalid CRM Type",
 
 	"_": "DB Errors",
 	"1100": "Failed to create record",
@@ -56,12 +58,13 @@
 	"1601": "HTTP Request failed",
 	"1602": "REST Error",
 
-	"_": "CSR Errors",
+	"_": "USPS Errors",
 	"1700": "USPS Connecton Failure",
 	"1701": "USPS Address invalid",
 	"1702": "USPS City invalid",
 
 	"_": "WellDyne Errors",
+	"1800": "No order in record",
 
 	"_": "Patient Errors",
 	"1900": "Email already in use",

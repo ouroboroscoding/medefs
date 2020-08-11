@@ -1,48 +1,81 @@
 {
 	"__mysql__": {
-		"auto_primary": true,
-		"db": "monolith",
-		"host": "monolith",
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "crm_type", "crm_id", "crm_order", "medication", "rx_id", "type", "opened", "shipped", "raw"],
+		"db": "mems",
+		"host": "primary",
 		"indexes": {
-			"customerId": {"unique": null}
+			"ui_cotm": {"unique": ["crm_type", "crm_id", "crm_order", "type", "medication"]}
 		},
-		"primary": "id",
-		"table": "wd_trigger",
-		"engine": "InnoDB",
-		"charset": "utf8mb4",
-		"collate": "utf8mb4_0900_ai_ci"
+		"table": "welldyne_trigger",
+		"engine": "InnoDB"
 	},
 
-	"__name__": "WdTrigger",
+	"__name__": "WelldyneTrigger",
 
-	"id": {
-		"__type__": "uint",
+	"_id": {
+		"__type__": "uuid",
 		"__optional__": true
 	},
-	"customerId": {
-		"__type__": "int"
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
 	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"crm_type": {
+		"__type__": "string",
+		"__options__": ["knk", "ms"]
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+
+	"crm_order": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+
+	"medication": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+
+	"rx_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+
 	"type": {
 		"__type__": "string",
-		"__options__": ["initial", "refill"]
+		"__options__": ["initial", "refill", "update"]
 	},
-	"triggered": {
-		"__type__": "datetime"
-	},
+
 	"opened": {
 		"__type__": "datetime",
 		"__optional__": true
 	},
+
 	"shipped": {
 		"__type__": "datetime",
 		"__optional__": true
 	},
-	"createdAt": {
-		"__type__": "datetime",
-		"__optional__": true
-	},
-	"updatedAt": {
-		"__type__": "datetime",
-		"__optional__": true
+
+	"raw": {
+		"__type__": "string",
+		"__maximum__": 255
 	}
 }
