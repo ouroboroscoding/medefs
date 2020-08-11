@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["expires", "key"],
+		"create": ["key"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
