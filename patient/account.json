@@ -2,14 +2,14 @@
 	"__mysql__": {
 		"auto_primary": "UUID()",
 		"changes": ["user"],
-		"create": ["_created", "email", "passwd", "locale", "type", "crm_id"],
+		"create": ["_created", "email", "passwd", "verified", "locale", "crm_type", "crm_id", "rx_type", "rx_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
 			"email": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "auth_user_patient"
+		"table": "patient_account"
 	},
 
 	"__react__": {
@@ -19,7 +19,7 @@
 		"update": ["email", "type", "crm_id"]
 	},
 
-	"__name__": "Auth_UserPatient",
+	"__name__": "Patient_Account",
 
 	"_id": {
 		"__type__":"uuid",
@@ -52,6 +52,12 @@
 			"type": "password"
 		}
 	},
+	"verified": {
+		"__type__": "bool",
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
 	"locale": {
 		"__type__": "string",
 		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
@@ -62,7 +68,7 @@
 			"type": "hidden"
 		}
 	},
-	"type": {
+	"crm_type": {
 		"__type__": "string",
 		"__options__": ["knk", "mems"],
 		"__react__": {
@@ -71,6 +77,18 @@
 		}
 	},
 	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+	"rx_type": {
+		"__type__": "string",
+		"__options__": ["ds", "ana"],
+		"__react__": {
+			"options": [["ds", "DoseSpot"], ["ana", "Anazao"]],
+			"title": "Prescription Type"
+		}
+	},
+	"rx_id": {
 		"__type__": "string",
 		"__maximum__": 36
 	}
