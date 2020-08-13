@@ -7,11 +7,11 @@
 		"indexes": {
 			"trigger_id": {"unique": null}
 		},
-		"table": "welldyne_adhoc",
+		"table": "welldyne_adhoc_manual",
 		"engine": "InnoDB"
 	},
 
-	"__name__": "Welldyne_Adhoc",
+	"__name__": "Welldyne_Adhoc_Manual",
 
 	"_id": {
 		"__type__": "uuid",
