@@ -66,6 +66,7 @@
 	"_": "WellDyne Errors",
 	"1800": "No order in record",
 	"1801": "No Raw in Trigger",
+	"1802": "No trigger associated with outbound",
 
 	"_": "Patient Errors",
 	"1900": "Email already in use",
