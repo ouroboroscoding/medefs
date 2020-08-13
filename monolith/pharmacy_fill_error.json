@@ -39,7 +39,7 @@
 		"__type__": "string",
 		"__options__": ["fill", "outreach", "adhoc"],
 		"__react__": {
-			"title": "Trigger Type"
+			"title": "Type"
 		}
 	},
 	"type": {
