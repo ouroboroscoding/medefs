@@ -1,0 +1,45 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "list", "number", "customer", "name"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_list_customer": {"unique": ["list", "number"]}
+		},
+		"table": "csr_custom_list_item"
+	},
+
+	"__name__": "CSR_CustomListItem",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"list": {
+		"__type__":"uuid"
+	},
+
+	"number": {
+		"__type__": "string",
+		"__maximum__": 10
+	},
+
+	"customer": {
+		"__type__":"uint"
+	},
+
+	"name": {
+		"__type__": "string",
+		"__maximum__": 255
+	}
+}

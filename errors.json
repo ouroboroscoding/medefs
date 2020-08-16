@@ -11,6 +11,7 @@
 	"204": "SERVICE_NOT_REGISTERED",
 	"205": "SERVICE_NO_SUCH_NOUN",
 	"206": "SERVICE_INTERNAL_KEY",
+	"207": "SERVICE_CRASHED",
 
 	"_": "Common Errors",
 	"1000": "No rights to request/update",
@@ -24,6 +25,7 @@
 	"1102": "Failed to delete record",
 	"1103": "Failed to update record",
 	"1104": "Record can not be found",
+	"1105": "Record doesn't belong to user",
 
 	"_": "User Errors",
 	"1200": "Email already in use",
@@ -52,6 +54,7 @@
 	"1501": "Username already in use",
 	"1502": "Password isn't strong enough",
 	"1503": "User inactive",
+	"1504": "Claim limit",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",

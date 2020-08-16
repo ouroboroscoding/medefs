@@ -1,0 +1,36 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "agent", "title"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_agent_title": {"unique": ["agent", "title"]}
+		},
+		"table": "csr_custom_list"
+	},
+
+	"__name__": "CSR_CustomList",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"agent": {
+		"__type__":"uuid"
+	},
+
+	"title": {
+		"__type__":"string",
+		"__maximum__": 31
+	}
+}
