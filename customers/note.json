@@ -1,0 +1,41 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "customer", "user", "content"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"customer": null
+		},
+		"primary": "_id",
+		"table": "customers_note"
+	},
+
+	"__name__": "Customers_Note",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"customer": {
+		"__type__": "uuid"
+	},
+
+	"user": {
+		"__type__": "uuid"
+	},
+
+	"content": {
+		"__type__": "string",
+		"__maximum__": 255
+	}
+}

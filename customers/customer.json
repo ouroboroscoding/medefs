@@ -1,0 +1,122 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"changes": ["user"],
+		"create": ["_created", "_updated", "email", "locale", "comm_preference",
+			"title", "first_name", "middle_name", "last_name", "suffix",
+			"phoneCode", "phoneNumber"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"email": {"unique": null},
+			"ui_phone": {"unique": ["phoneCode", "phoneNumber"]}
+		},
+		"primary": "_id",
+		"table": "customers_customer"
+	},
+
+	"__name__": "Customers_Customer",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"email": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+
+	"locale": {
+		"__type__": "string",
+		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
+		"__sql__": "char(5)",
+		"__react__": {
+			"options": [["en-US", "U.S. English"]],
+			"title": "Language",
+			"type": "hidden"
+		}
+	},
+
+	"comm_preference": {
+		"__type__": "string",
+		"__options__": ["email", "sms", "phone", "none"],
+		"__react__": {
+			"options": [["email", "E-mail"], ["sms", "SMS Message"], ["phone", "Phone"], ["none", "Do not contact"]],
+			"title": "Communication Preference",
+			"type": "select"
+		}
+	},
+
+	"title": {
+		"__type__": "string",
+		"__options__": ["Dr.", "Mr.", "Mrs.", "Ms."],
+		"__optional__": true,
+		"__react__": {
+			"title": "Title",
+			"type": "select"
+		}
+	},
+
+	"first_name": {
+		"__type__": "string",
+		"__minumum__": 1,
+		"__maximum__": 31,
+		"__react__": {
+			"title": "Name"
+		}
+	},
+
+	"middle_name": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__optional__": true,
+		"__react__": {
+			"title": "Middle Name"
+		}
+	},
+
+	"last_name": {
+		"__type__": "string",
+		"__minumum__": 2,
+		"__maximum__": 31,
+		"__react__": {
+			"title": "Surname"
+		}
+	},
+
+	"suffix": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__optional__": true,
+		"__react__": {
+			"title": "Suffix (e.g. PhD, RN, Esq)"
+		}
+	},
+
+	"phoneCode": {
+		"__type__": "string",
+		"__options__": ["+1"]
+	},
+
+	"phoneNumber": {
+		"__type__": "string",
+		"__maximum__": 15
+	}
+}
