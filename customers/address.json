@@ -11,7 +11,9 @@
 			"customer": null
 		},
 		"primary": "_id",
-		"table": "customers_address"
+		"table": "customers_address",
+		"charset": "utf8",
+		"collate": "utf8_general_ci"
 	},
 
 	"__name__": "Customers_Address",
@@ -52,10 +54,7 @@
 	"label": {
 		"__type__": "string",
 		"__optional__": true,
-		"__maximum__": 15,
-		"__sql__": {
-			"opts": "default ''"
-		}
+		"__maximum__": 15
 	},
 
 	"full_name": {

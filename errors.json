@@ -80,5 +80,8 @@
 	"1905": "Invalid verification code",
 	"1906": "Too many attempts to validate",
 	"1907": "Failed Setup Attempt",
-	"1908": "Account not verified"
+	"1908": "Account not verified",
+
+	"_": "Customer Errors",
+	"2000": "Customer already exists"
 }
