@@ -8,7 +8,7 @@
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"customer": null
+			"ui_customer_label": {"unique": ["customer", "label"]}
 		},
 		"primary": "_id",
 		"table": "customers_address",
@@ -44,17 +44,15 @@
 	},
 
 	"active": {
-		"__type__": "bool",
-		"__optional__": true,
-		"__sql__": {
-			"opts": "default 1"
-		}
+		"__type__": "bool"
 	},
 
 	"label": {
 		"__type__": "string",
-		"__optional__": true,
-		"__maximum__": 15
+		"__maximum__": 39,
+		"__rest__": {
+			"maximum": 20
+		}
 	},
 
 	"full_name": {
