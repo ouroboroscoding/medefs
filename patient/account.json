@@ -1,12 +1,13 @@
 {
 	"__mysql__": {
-		"auto_primary": "UUID()",
+		"auto_primary": false,
 		"changes": ["user"],
 		"create": ["_created", "email", "passwd", "verified", "locale", "crm_type", "crm_id", "rx_type", "rx_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"email": {"unique": null}
+			"email": {"unique": null},
+			"crm": {"unique": ["crm_type", "crm_id"]}
 		},
 		"primary": "_id",
 		"table": "patient_account"
@@ -23,7 +24,6 @@
 
 	"_id": {
 		"__type__":"uuid",
-		"__optional__": true,
 		"__react__": {
 			"title": "ID"
 		}
@@ -82,6 +82,7 @@
 	},
 	"rx_type": {
 		"__type__": "string",
+		"__optional__": true,
 		"__options__": ["ds", "ana"],
 		"__react__": {
 			"options": [["ds", "DoseSpot"], ["ana", "Anazao"]],
@@ -90,6 +91,7 @@
 	},
 	"rx_id": {
 		"__type__": "string",
+		"__optional__": true,
 		"__maximum__": 36
 	}
 }
