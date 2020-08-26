@@ -14,7 +14,8 @@
 	"__name__": "Patient_AccountSetup",
 
 	"_id": {
-		"__type__":"uuid"
+		"__type__":"uuid",
+		"__optional__": true
 	},
 	"_created": {
 		"__type__":"timestamp",
