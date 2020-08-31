@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": true,
-		"create": ["_id", "_created", "user", "name", "rights"],
+		"create": ["_id", "_created", "user", "name", "rights", "idents"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
