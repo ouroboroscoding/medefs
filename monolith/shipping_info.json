@@ -17,8 +17,8 @@
 
 	"code": {
 		"__type__": "string",
-		"__maximum__": 22,
-		"__sql__": "char(22)"
+		"__maximum__": 26,
+		"__sql__": "char(26)"
 	},
 	"type": {
 		"__type__": "string",
