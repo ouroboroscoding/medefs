@@ -1,0 +1,67 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"identifier": null
+		},
+		"primary": "id",
+		"table": "hrt_lab_result",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "HrtLabResult",
+
+	"id": {
+		"__type__": "int"
+	},
+	"identifier": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+	"referenceCode": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"customerId": {
+		"__type__": "string",
+		"__maximum__": 63,
+		"__optional__": true
+	},
+	"patientName": {
+		"__type__": "string",
+    "__maximum__": 255,
+		"__optional__": true
+	},
+	"patientDOB": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+  },
+  "comments": {
+    "__type__": "string",
+    "__maximum__": 4294967296,
+		"__optional__": true
+	},
+	"dateReceived": {
+		"__type__": "string",
+    "__maximum__": 255,
+		"__optional__": true
+	},
+	"dateReported": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+  },
+  
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}
