@@ -1,11 +1,11 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "crm_type", "crm_id", "crm_order", "medication", "reason", "ready"],
+		"create": ["_created", "trigger_id", "reason", "ready"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"ui_co": {"unique": ["crm_type", "crm_id", "crm_order"]}
+			"trigger_id": {"unique": null}
 		},
 		"table": "welldyne_never_started",
 		"engine": "InnoDB"
@@ -26,33 +26,8 @@
 		}
 	},
 
-	"crm_type": {
-		"__type__": "string",
-		"__options__": ["knk", "mems"],
-		"__react__": {
-			"title": "CRM"
-		}
-	},
-
-	"crm_id": {
-		"__type__": "string",
-		"__maximum__": 36,
-		"__react__": {
-			"title": "ID"
-		}
-	},
-
-	"crm_order": {
-		"__type__": "string",
-		"__maximum__": 36,
-		"__react__": {
-			"title": "Order"
-		}
-	},
-
-	"medication": {
-		"__type__": "string",
-		"__maximum__": 255
+	"trigger_id": {
+		"__type__": "uuid"
 	},
 
 	"reason": {
