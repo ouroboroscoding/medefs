@@ -73,6 +73,7 @@
 
 	"opened_state": {
 		"__type__": "string",
+		"__optional__": true,
 		"__maximum__": 127,
 		"__sql__": {
 			"opts": "default 0"
