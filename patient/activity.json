@@ -1,7 +1,6 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"changes": ["user"],
 		"create": ["_created", "account", "date", "time", "type", "ip"],
 		"db": "mems",
 		"host": "primary",
@@ -12,8 +11,11 @@
 		"table": "patient_activity"
 	},
 
+	"__name__": "Patient_Activity",
+
 	"_created": {
 		"__type__": "timestamp",
+		"__optional__": true,
 		"__sql__": {
 			"opts": "default CURRENT_TIMESTAMP"
 		}
