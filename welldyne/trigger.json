@@ -1,7 +1,9 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "_updated", "crm_type", "crm_id", "crm_order", "medication", "rx_id", "type", "opened", "shipped", "raw"],
+		"create": ["_created", "_updated", "crm_type", "crm_id", "crm_order",
+					"medication", "rx_id", "type", "opened", "opened_state",
+					"shipped", "cancelled", "raw"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -69,7 +71,21 @@
 		"__optional__": true
 	},
 
+	"opened_state": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 127,
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+
 	"shipped": {
+		"__type__": "datetime",
+		"__optional__": true
+	},
+
+	"cancelled": {
 		"__type__": "datetime",
 		"__optional__": true
 	},
