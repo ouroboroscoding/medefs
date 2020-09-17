@@ -102,8 +102,9 @@
 
 	"claims_max": {
 		"__type__": "uint",
-		"__maximum__": 255,
+		"__maximum__": 50,
 		"__react__": {
+			"default": 20,
 			"title": "Maximum self-claims"
 		}
 	},
@@ -112,8 +113,9 @@
 		"__type__": "uint",
 		"__options__": [48, 96, 144],
 		"__react__": {
-			"title": "Maximum claim hold",
-			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]]
+			"default": 48,
+			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]],
+			"title": "Maximum claim hold"
 		}
 	}
 }

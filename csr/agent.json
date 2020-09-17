@@ -37,7 +37,7 @@
 
 	"claims_max": {
 		"__type__": "uint",
-		"__maximum__": 255,
+		"__maximum__": 50,
 		"__sql__": {
 			"type": "tinyint unsigned"
 		},
