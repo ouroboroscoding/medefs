@@ -71,6 +71,7 @@
 	"1801": "No Raw in Trigger",
 	"1802": "No trigger associated with outbound",
 	"1803": "No such file on sFTP",
+	"1804": "Invalid report format",
 
 	"_": "Patient Errors",
 	"1900": "Email already in use",
