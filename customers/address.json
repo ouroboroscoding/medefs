@@ -50,26 +50,37 @@
 	"label": {
 		"__type__": "string",
 		"__maximum__": 39,
-		"__rest__": {
+		"__react__": {
+			"title": "Label",
 			"maximum": 20
 		}
 	},
 
 	"full_name": {
 		"__type__": "string",
-		"__maximum__": 95
+		"_optional_": true,
+		"__maximum__": 95,
+		"__react__": {
+			"title": "Full Name (optional)"
+		}
 	},
 
 	"address1": {
 		"__type__": "string",
 		"__minimum__": 5,
-		"__maximum__": 31
+		"__maximum__": 31,
+		"__react__": {
+			"title": "Address"
+		}
 	},
 
 	"address2": {
 		"__type__": "string",
 		"__maximum__": 31,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Suite / Apt"
+		}
 	},
 
 	"city": {
@@ -79,6 +90,7 @@
 
 	"division": {
 		"__type__": "string",
+		"__optional__": true,
 		"__regex__": "[A-Z]{2}",
 		"__sql__": {
 			"type": "char(2)"
@@ -87,7 +99,6 @@
 
 	"country": {
 		"__type__": "string",
-		"__options__": ["US"],
 		"__sql__": {
 			"type": "char(2)"
 		}
@@ -95,6 +106,9 @@
 
 	"postalCode": {
 		"__type__": "string",
-		"__maximum__": 10
+		"__maximum__": 10,
+		"__react__": {
+			"title": "Zip/Postal Code"
+		}
 	}
 }

@@ -17,6 +17,12 @@
 		"collate": "utf8_general_ci"
 	},
 
+	"__react__": {
+		"create": ["email", "locale", "comm_preference", "title", "first_name",
+					"middle_name", "last_name", "suffix", "dob", "phoneCode",
+					"phoneNumber"]
+	},
+
 	"__name__": "Customers_Customer",
 
 	"_id": {
@@ -58,7 +64,7 @@
 		"__react__": {
 			"options": [["en-US", "U.S. English"]],
 			"title": "Language",
-			"type": "hidden"
+			"type": "select"
 		}
 	},
 
@@ -119,17 +125,26 @@
 	},
 
 	"dob": {
-		"__type__": "date"
+		"__type__": "date",
+		"__react__": {
+			"title": "Date of Birth"
+		}
 	},
 
 	"phoneCode": {
 		"__type__": "string",
-		"__options__": ["+1"]
+		"__options__": ["+1"],
+		"__react__": {
+			"title": "Phone Country Code"
+		}
 	},
 
 	"phoneNumber": {
 		"__type__": "string",
-		"__maximum__": 15
+		"__maximum__": 15,
+		"__react__": {
+			"title": "Phone Number"
+		}
 	},
 
 	"billing": {
