@@ -58,7 +58,7 @@
 
 	"full_name": {
 		"__type__": "string",
-		"_optional_": true,
+		"__optional__": true,
 		"__maximum__": 95,
 		"__react__": {
 			"title": "Full Name (optional)"
