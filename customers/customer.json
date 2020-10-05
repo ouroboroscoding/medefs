@@ -18,7 +18,7 @@
 	},
 
 	"__react__": {
-		"create": ["email", "locale", "comm_preference", "title", "first_name",
+		"order": ["email", "locale", "comm_preference", "title", "first_name",
 					"middle_name", "last_name", "suffix", "dob", "phoneCode",
 					"phoneNumber"]
 	},
