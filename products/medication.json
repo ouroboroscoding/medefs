@@ -1,0 +1,107 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"changes": ["user"],
+		"create": ["_created", "_updated", "name", "descr", "generic_name", "dose_form", "strength", "daily_max", "ndc"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"name": {"unique": null},
+			"generic_name": null,
+			"ndc": null
+		},
+		"primary": "_id",
+		"table": "products_medication",
+		"charset": "utf8",
+		"collate": "utf8_general_ci"
+	},
+
+	"__react__": {
+		"order": ["name", "descr", "generic_name", "dose_form", "strength", "ndc"],
+		"results": ["_id", "name", "descr"],
+		"search": ["_id", "name", "generic_name", "ndc"]
+	},
+
+	"__name__": "Products_Medication",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"name": {
+		"__type__": "string",
+		"__maximum__": 63
+	},
+
+	"descr": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Description"
+		}
+	},
+
+	"generic_name": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__react__": {
+			"title": "Generic Drug Name"
+		}
+	},
+
+	"dose_form": {
+		"__type__": "string",
+		"__options__": ["tablet", "liquid", "cream"],
+		"__react__": {
+			"title": "Dosage Dispense/Form",
+			"type": "select"
+		}
+	},
+
+	"strength": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 15,
+		"__react__": {
+			"title": "Dosage Strength"
+		}
+	},
+
+	"daily_max": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 63,
+		"__react__": {
+			"title": "Daily Max Dosage"
+		}
+	},
+
+	"ndc": {
+		"__type__": "string",
+		"__mniimum__": 11,
+		"__maximum__": 11,
+		"__react__": {
+			"title": "National Drug Code"
+		}
+	}
+}

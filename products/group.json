@@ -1,0 +1,59 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "name", "descr"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"name": {"unique": null}
+		},
+		"primary": "_id",
+		"table": "products_group",
+		"charset": "utf8",
+		"collate": "utf8_general_ci"
+	},
+
+	"__react__": {
+		"order": ["name", "descr"],
+		"results": ["_id", "name", "descr"]
+	},
+
+	"__name__": "Products_Group",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"name": {
+		"__type__": "string",
+		"__maximum__": 15
+	},
+
+	"descr": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Description"
+		}
+	}
+}
