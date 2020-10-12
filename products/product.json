@@ -16,8 +16,8 @@
 	},
 
 	"__react__": {
-		"order": [],
-		"results": []
+		"order": ["name", "group", "medication", "units", "cost", "price"],
+		"results": ["name", "units", "cost", "price"]
 	},
 
 	"__name__": "Products_Product",
