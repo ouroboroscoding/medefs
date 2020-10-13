@@ -1,0 +1,76 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"changes": ["user"],
+		"create": ["_created", "_updated", "customer", "product", "mip",
+					"rx_type", "rx_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"customer": null,
+			"product": null
+		},
+		"primary": "_id",
+		"table": "qualmed_item",
+		"charset": "utf8",
+		"collate": "utf8_bin"
+	},
+
+	"__react__": {
+	},
+
+	"__name__": "Customers_Customer",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"customer": {
+		"__type__": "uuid"
+	},
+
+	"product": {
+		"__type__": "uuid"
+	},
+
+	"mip": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+
+	"rx_type": {
+		"__type__": "string",
+		"__optional__": true,
+		"__options__": ["ds", "ana"],
+		"__react__": {
+			"options": [["ds", "DoseSpot"], ["ana", "Anazao"]],
+			"title": "Prescription Type"
+		}
+	},
+
+	"rx_id": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 36
+	}
+}
