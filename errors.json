@@ -54,7 +54,8 @@
 	"1501": "Username already in use",
 	"1502": "Password isn't strong enough",
 	"1503": "User inactive",
-	"1504": "Claim limit",
+	"1504": "Conversation claim limit",
+	"1505": "Doctor claim limit",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",
