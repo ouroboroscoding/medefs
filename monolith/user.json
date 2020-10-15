@@ -70,13 +70,56 @@
 			"title": "Role"
 		}
 	},
+	"notificationPref": {
+		"__type__": "string",
+		"__optional__": true,
+		"__options__": ["none", "both", "email", "text"],
+		"__react__": {
+			"options": [["none", "No notifications"], ["both", "Email and SMS"], ["email", "Email"], ["text", "SMS"]],
+			"title": "Notification Preference"
+		}
+	},
+	"eDFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"]
+	},
+	"hormoneFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"]
+	},
+	"hairLossFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"]
+	},
+	"urgentCareFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"]
+	},
 	"practiceStates": {
 		"__type__": "string",
 		"__maximum__": 255,
 		"__optional__": true,
 		"__react__": {
-			"title": "Practice States"
+			"title": "ED Practice States"
 		}
+	},
+	"hrtPracticeStates": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "HRT Practice States"
+		}
+	},
+	"providerScheduleLink": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 255
+	},
+	"calendlyEmail": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 63
 	},
 	"doctorNPI": {
 		"__type__": "string",
