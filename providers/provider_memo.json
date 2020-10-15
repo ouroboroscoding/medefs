@@ -1,8 +1,16 @@
 {
 	"__react__": {
-		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"],
+		"create": ["userName", "password", "firstName", "lastName", "email",
+					"cellNumber", "notificationPref", "eDFlag", "hormoneFlag",
+					"hairLossFlag", "urgentCareFlag", "practiceStates",
+					"hrtPracticeStates", "providerScheduleLink", "calendlyEmail",
+					"dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"],
 		"results": ["userName", "firstName", "lastName"],
-		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"]
+		"update": ["userName", "firstName", "lastName", "email",
+					"cellNumber", "notificationPref", "eDFlag", "hormoneFlag",
+					"hairLossFlag", "urgentCareFlag", "practiceStates",
+					"hrtPracticeStates", "providerScheduleLink", "calendlyEmail",
+					"dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"]
 	},
 
 	"__name__": "Providers_ProviderMemo",
@@ -71,6 +79,15 @@
 		}
 	},
 
+	"cellNumber": {
+		"__type__": "string",
+		"__maximum__": 11,
+		"__optional__": true,
+		"__react__": {
+			"title": "Cell Phone"
+		}
+	},
+
 	"notificationPref": {
 		"__type__": "string",
 		"__optional__": true,
@@ -84,21 +101,33 @@
 	"eDFlag": {
 		"__type__": "string",
 		"__options__": ["Y", "N"],
+		"__react__": {
+			"title": "Erectile Dysfunction"
+		}
 	},
 
 	"hormoneFlag": {
 		"__type__": "string",
-		"__options__": ["Y", "N"]
+		"__options__": ["Y", "N"],
+		"__react__": {
+			"title": "Hormone Replacement Therapy"
+		}
 	},
 
 	"hairLossFlag": {
 		"__type__": "string",
-		"__options__": ["Y", "N"]
+		"__options__": ["Y", "N"],
+		"__react__": {
+			"title": "Hair Loss"
+		}
 	},
 
 	"urgentCareFlag": {
 		"__type__": "string",
-		"__options__": ["Y", "N"]
+		"__options__": ["Y", "N"],
+		"__react__": {
+			"title": "Urgent Care"
+		}
 	},
 
 	"practiceStates": {
@@ -106,7 +135,9 @@
 		"__maximum__": 255,
 		"__optional__": true,
 		"__react__": {
-			"title": "ED Practice States"
+			"extra_space": true,
+			"title": "ED Practice States",
+			"type": "multiselectcsv"
 		}
 	},
 
@@ -115,20 +146,28 @@
 		"__maximum__": 255,
 		"__optional__": true,
 		"__react__": {
-			"title": "HRT Practice States"
+			"extra_space": true,
+			"title": "HRT Practice States",
+			"type": "multiselectcsv"
 		}
 	},
 
 	"providerScheduleLink": {
 		"__type__": "string",
 		"__optional__": true,
-		"__maximum__": 255
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Calendly Schedule (URL)"
+		}
 	},
 
 	"calendlyEmail": {
 		"__type__": "string",
 		"__optional__": true,
-		"__maximum__": 63
+		"__maximum__": 63,
+		"__react__": {
+			"title": "Calendly Email"
+		}
 	},
 
 	"dsClinicId": {
