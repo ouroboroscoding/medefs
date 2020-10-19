@@ -17,6 +17,15 @@
 		"collate": "utf8_general_ci"
 	},
 
+	"__react__": {
+		"order": ["email", "locale", "comm_preference", "title", "first_name",
+					"middle_name", "last_name", "suffix", "dob", "phoneCode",
+					"phoneNumber"],
+		"results": ["_id", "email", "first_name", "last_name", "phoneNumber"],
+		"search": ["_id", "email", "first_name", "middle_name", "last_name", "suffix",
+					"dob", "phoneNumber"]
+	},
+
 	"__name__": "Customers_Customer",
 
 	"_id": {
@@ -149,15 +158,5 @@
 	"shipping": {
 		"__type__": "uuid",
 		"__optional__": true
-	},
-
-	"__react__": {
-		"order": ["email", "locale", "comm_preference", "title", "first_name",
-					"middle_name", "last_name", "suffix", "dob", "phoneCode",
-					"phoneNumber"],
-		"create": ["email", "locale", "comm_preference", "title", "first_name",
-					"middle_name", "last_name", "suffix", "dob", "phoneCode",
-					"phoneNumber"]
 	}
-
 }
