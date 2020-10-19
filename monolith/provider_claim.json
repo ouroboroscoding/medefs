@@ -1,0 +1,43 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["user", "transferredBy", "createdAt", "updatedAt"],
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"user": null
+		},
+		"primary": "customerId",
+		"table": "provider_claim",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "ProviderClaimed",
+
+	"customerId": {
+		"__type__": "int"
+	},
+	"user": {
+		"__type__": "int"
+	},
+	"transferredBy": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"createdAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"updatedAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	}
+}
