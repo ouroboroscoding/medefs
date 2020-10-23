@@ -56,6 +56,8 @@
 	"1503": "User inactive",
 	"1504": "Conversation claim limit",
 	"1505": "Doctor claim limit",
+	"1506": "No practice states in type",
+	"1507": "No memo ID in session",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",
