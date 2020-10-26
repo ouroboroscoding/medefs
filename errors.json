@@ -58,6 +58,7 @@
 	"1505": "Doctor claim limit",
 	"1506": "No practice states in type",
 	"1507": "No memo ID in session",
+	"1508": "Can't find customer by phone number for claim",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",

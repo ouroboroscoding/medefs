@@ -16,7 +16,8 @@
 	"__name__": "CustomerMsgPhone",
 
 	"id": {
-		"__type__": "int"
+		"__type__": "int",
+		"__optional__": true
 	},
 	"customerPhone": {
 		"__type__": "string",
