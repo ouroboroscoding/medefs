@@ -27,6 +27,11 @@
 
 	"service": {
 		"__type__": "string",
-		"__options__": ["sales", "support", "doctor"]
+		"__options__": ["sales", "support", "batch", "doctor"]
+	},
+
+	"agent": {
+		"__type__": "int",
+		"__optional__": true
 	}
 }
