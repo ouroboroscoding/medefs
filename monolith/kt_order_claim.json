@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["orderId", "user", "provider", "transferredBy", "createdAt", "updatedAt"],
+		"create": ["orderId", "user", "transferredBy", "createdAt", "updatedAt"],
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
@@ -26,10 +26,6 @@
 	},
 	"user": {
 		"__type__": "int"
-	},
-	"provider": {
-		"__type__": "int",
-		"__optional__": true
 	},
 	"transferredBy": {
 		"__type__": "int",
