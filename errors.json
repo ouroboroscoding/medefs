@@ -90,6 +90,7 @@
 	"1908": "Account not verified",
 	"1909": "RX already set",
 	"1910": "Invalid DOB",
+	"1911": "Account already setup",
 
 	"_": "Customer Errors",
 	"2000": "Customer already exists"
