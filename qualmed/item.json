@@ -16,10 +16,7 @@
 		"collate": "utf8_bin"
 	},
 
-	"__react__": {
-	},
-
-	"__name__": "Customers_Customer",
+	"__name__": "Qualmed_Item",
 
 	"_id": {
 		"__type__": "uuid",
