@@ -81,19 +81,23 @@
 	},
 	"eDFlag": {
 		"__type__": "string",
-		"__options__": ["Y", "N"]
+		"__options__": ["Y", "N"],
+		"__optional__": true
 	},
 	"hormoneFlag": {
 		"__type__": "string",
-		"__options__": ["Y", "N"]
+		"__options__": ["Y", "N"],
+		"__optional__": true
 	},
 	"hairLossFlag": {
 		"__type__": "string",
-		"__options__": ["Y", "N"]
+		"__options__": ["Y", "N"],
+		"__optional__": true
 	},
 	"urgentCareFlag": {
 		"__type__": "string",
-		"__options__": ["Y", "N"]
+		"__options__": ["Y", "N"],
+		"__optional__": true
 	},
 	"practiceStates": {
 		"__type__": "string",
