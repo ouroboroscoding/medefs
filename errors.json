@@ -60,6 +60,7 @@
 	"1507": "No memo ID in session",
 	"1508": "Can't find customer by phone number for claim",
 	"1509": "Can't remove STOP set by customer",
+	"1510": "SMS Content too many characters",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",
