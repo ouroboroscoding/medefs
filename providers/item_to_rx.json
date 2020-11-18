@@ -1,24 +1,20 @@
 {
 	"__mysql__": {
-		"auto_primary": "UUID()",
-		"create": ["_created", "order_id", "ds_id", "user"],
+		"auto_primary": false,
+		"create": ["_created", "order_id", "item_id", "ds_id", "user"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"order_id": {"unique": null}
+			"order_item": {"unique": ["order_id", "item_id"]},
+			"ds_id": {"unique": null}
 		},
-		"primary": "_id",
-		"table": "qualmed_knk_order",
+		"primary": false,
+		"table": "providers_item_to_rx",
 		"charset": "utf8",
 		"collate": "utf8_bin"
 	},
 
-	"__name__": "Qualmed_KnkOrder",
-
-	"_id": {
-		"__type__": "uuid",
-		"__optional__": true
-	},
+	"__name__": "Providers_ItemToRX",
 
 	"_created": {
 		"__type__": "timestamp",
@@ -31,6 +27,10 @@
 	"order_id": {
 		"__type__": "string",
 		"__maximum__": 10
+	},
+
+	"item_id": {
+		"__type__": "uint"
 	},
 
 	"ds_id": {
