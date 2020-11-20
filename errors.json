@@ -61,6 +61,9 @@
 	"1508": "Can't find customer by phone number for claim",
 	"1509": "Can't remove STOP set by customer",
 	"1510": "SMS Content too many characters",
+	"1511": "No such SMS Workflow method",
+	"1512": "SMS Workflow method crashed",
+	"1513": "Provider doesn't own claim",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",

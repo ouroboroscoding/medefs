@@ -56,5 +56,13 @@
 			"title": "Maximum claim hold",
 			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]]
 		}
+	},
+
+	"agent": {
+		"__type__": "int",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "not null default 0"
+		}
 	}
 }

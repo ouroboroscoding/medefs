@@ -4,13 +4,15 @@
 					"cellNumber", "notificationPref", "eDFlag", "hormoneFlag",
 					"hairLossFlag", "urgentCareFlag", "practiceStates",
 					"hrtPracticeStates", "providerScheduleLink", "calendlyEmail",
-					"dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"],
+					"dsClinicId", "dsClinicianId", "claims_max", "claims_timeout",
+					"agent"],
 		"results": ["userName", "firstName", "lastName"],
 		"update": ["userName", "firstName", "lastName", "email",
 					"cellNumber", "notificationPref", "eDFlag", "hormoneFlag",
 					"hairLossFlag", "urgentCareFlag", "practiceStates",
 					"hrtPracticeStates", "providerScheduleLink", "calendlyEmail",
-					"dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"]
+					"dsClinicId", "dsClinicianId", "claims_max", "claims_timeout",
+					"agent"]
 	},
 
 	"__name__": "Providers_ProviderMemo",
@@ -205,5 +207,10 @@
 			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]],
 			"title": "Maximum claim hold"
 		}
+	},
+
+	"agent": {
+		"__type__": "int",
+		"__optional__": true
 	}
 }

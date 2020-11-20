@@ -1,0 +1,19 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["agent"],
+		"db": "mems",
+		"host": "primary",
+		"primary": "agent",
+		"indexes": {
+			"agent": {"unique": null}
+		},
+		"table": "providers_round_robin_agent"
+	},
+
+	"__name__": "Providers_RoundRobinAgent",
+
+	"agent": {
+		"__type__":"int"
+	}
+}
