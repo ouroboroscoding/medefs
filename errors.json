@@ -63,7 +63,8 @@
 	"1510": "SMS Content too many characters",
 	"1511": "No such SMS Workflow method",
 	"1512": "SMS Workflow method crashed",
-	"1513": "Provider doesn't own claim",
+	"1513": "User doesn't own claim",
+	"1514": "No Provider to transfer to",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",
