@@ -65,6 +65,14 @@
 		"__type__": "int",
 		"__optional__": true
 	},
+	"hrtProviderReviewOrderFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"],
+		"__sql__": {
+			"type": "varchar(1)",
+			"opts": "not null default 'N'"
+		}
+	},
 	"unreadMessageFlag": {
 		"__type__": "string",
 		"__maximum__": 1,
@@ -78,6 +86,22 @@
 	"currentFlag": {
 		"__type__": "string",
 		"__maximum__": 1
+	},
+	"labResultOnNoteFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"],
+		"__sql__": {
+			"type": "varchar(1)",
+			"opts": "not null default 'N'"
+		}
+	},
+	"lastProviderId": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"approvalProviderId": {
+		"__type__": "int",
+		"__optional__": true
 	},
 	"createdBy": {
 		"__type__": "int"

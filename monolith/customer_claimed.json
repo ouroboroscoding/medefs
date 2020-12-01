@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["user", "provider", "orderId", "continuous", "transferredBy",
+		"create": ["user", "provider", "orderId", "transferredBy",
 					"createdAt", "updatedAt"],
 		"db": "monolith",
 		"host": "monolith",
@@ -32,10 +32,6 @@
 		"__type__": "string",
 		"__minimum__": 10,
 		"__maximum__": 10,
-		"__optional__": true
-	},
-	"continuous": {
-		"__type__": "bool",
 		"__optional__": true
 	},
 	"transferredBy": {
