@@ -1,0 +1,75 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "crm_type", "crm_id", "crm_order", "queue", "reason", "wd_rx", "ready"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_co": {"unique": ["crm_type", "crm_id", "crm_order"]}
+		},
+		"table": "welldyne_outbound",
+		"engine": "InnoDB"
+	},
+
+	"__name__": "Welldyne_Outbound",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"crm_type": {
+		"__type__": "string",
+		"__options__": ["knk", "mems"],
+		"__react__": {
+			"title": "CRM"
+		}
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+
+	"crm_order": {
+		"__type__": "string",
+		"__maximum__": 36,
+		"__react__": {
+			"title": "Order"
+		}
+	},
+
+	"queue": {
+		"__type__": "string",
+		"__maximum__": 32
+	},
+
+	"reason": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+
+	"wd_rx": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+
+	"ready": {
+		"__type__": "bool",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
+		}
+	}
+}

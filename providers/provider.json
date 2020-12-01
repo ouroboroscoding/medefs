@@ -1,0 +1,68 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "memo_id", "claims_max", "claims_timeout", "agent"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"memo_id": {"unique": null}
+		},
+		"table": "providers_provider"
+	},
+
+	"__name__": "Providers_Provider",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"memo_id": {
+		"__type__":"int",
+		"__react__": {
+			"title": "Memo ID"
+		}
+	},
+
+	"claims_max": {
+		"__type__": "uint",
+		"__maximum__": 50,
+		"__sql__": {
+			"type": "tinyint unsigned"
+		},
+		"__react__": {
+			"title": "Maximum self-claims"
+		}
+	},
+
+	"claims_timeout": {
+		"__type__": "uint",
+		"__options__": [48, 96, 144],
+		"__sql__": {
+			"type": "tinyint unsigned"
+		},
+		"__react__": {
+			"title": "Maximum claim hold",
+			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]]
+		}
+	},
+
+	"agent": {
+		"__type__": "int",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "not null default 0"
+		}
+	}
+}

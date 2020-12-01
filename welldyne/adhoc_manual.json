@@ -1,0 +1,44 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "trigger_id", "type", "memo_user"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"trigger_id": {"unique": null}
+		},
+		"table": "welldyne_adhoc_manual",
+		"engine": "InnoDB"
+	},
+
+	"__name__": "Welldyne_Adhoc_Manual",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP comment 'Date requested'"
+		}
+	},
+
+	"trigger_id": {
+		"__type__": "uuid"
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["Update Address", "Cancel Order", "Remove Error", "Extend Eligibility"],
+		"__react__": {
+			"type": "select"
+		}
+	},
+
+	"memo_user": {
+		"__type__": "int"
+	}
+}

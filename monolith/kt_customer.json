@@ -1,0 +1,234 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"customerId": {"unique": null},
+			"firstName": null,
+			"lastName": null
+		},
+		"primary": "id",
+		"table": "kt_customer",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "KtCustomer",
+
+	"id": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"customerId": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+	"firstName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"lastName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"companyName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"address1": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"city": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"state": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"country": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"postalCode": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"phoneNumber": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"emailAddress": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"billShipSame": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipFirstName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipLastName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipCompanyName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipAddress1": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipAddress2": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipCity": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipState": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipPostalCode": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"shipCountry": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"paySourceId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"paySource": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"cardType": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"cardLast4": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"cardExpiryDate": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"sourceValue1": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"sourceValue2": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"sourceValue3": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"dateCreated": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"dateUpdated": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"mostRecentActivity": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"eCommerceLogin": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"eCommercePassword": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"campaignName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"campaignType": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"clientSourceId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"sourceTitle": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"sourceType": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"sourceId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"dateOfBirth": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

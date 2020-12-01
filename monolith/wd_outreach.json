@@ -1,0 +1,68 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"customerId": {"unique": null}
+		},
+		"primary": "id",
+		"table": "wd_outreach",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "WdTrigger",
+
+	"id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+	"customerId": {
+		"__type__": "int",
+		"__react__": {
+			"title": "KNK ID"
+		}
+	},
+	"queue": {
+		"__type__": "string",
+		"__maximum__": 32
+	},
+	"reason": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+	"rx": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+	"user": {
+		"__type__": "int",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+	"ready": {
+		"__type__": "bool",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+	"createdAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"updatedAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	}
+}

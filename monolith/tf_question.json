@@ -1,0 +1,168 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"questionNumber": {"unique": null},
+			"questionId": {"unique": null}
+		},
+		"primary": "id",
+		"table": "tf_question",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "TfQuestion",
+
+	"id": {
+		"__type__": "int"
+	},
+	"formId": {
+		"__type__": "string",
+		"__sql_type__": "varchar(255)"
+	},
+	"questionNumber": {
+		"__type__": "float"
+	},
+	"questionId": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+	"ref": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+	"title": {
+		"__type__": "string",
+		"__maximum__": 4095
+	},
+	"type": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+	"name": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"gender": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"fieldType": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"dataType": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"variant": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"fullWidth": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"autoFocus": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"pageId": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"pageDisplayOrder": {
+		"__type__": "float",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default '0'"
+		}
+	},
+	"pageTitle": {
+		"__type__": "string",
+		"__maximum__": 4095,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"inPageDisplayOrder": {
+		"__type__": "float",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default '0'"
+		}
+	},
+	"splitLastOption": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"includeQuestion": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"row": {
+		"__type__": "string",
+		"__maximum__": 45,
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default ''"
+		}
+	},
+	"activeFlag": {
+		"__type__": "string",
+		"__maximum__": 1,
+		"__sql__": {
+			"opts": "default 'Y'"
+		}
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

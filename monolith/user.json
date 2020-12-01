@@ -1,0 +1,241 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"userName": {"unique": null}
+		},
+		"primary": "id",
+		"table": "user",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "User",
+
+	"id": {
+		"__type__": "int",
+		"__optional__": true
+	},
+	"firstName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Name"
+		}
+	},
+	"lastName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Surname"
+		}
+	},
+	"email": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "E-mail"
+		}
+	},
+	"cellNumber": {
+		"__type__": "string",
+		"__maximum__": 11,
+		"__optional__": true,
+		"__react__": {
+			"title": "Cell Phone"
+		}
+	},
+	"userName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "User Name"
+		}
+	},
+	"password": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Password"
+		}
+	},
+	"userRole": {
+		"__type__": "string",
+		"__maximum__": 30,
+		"__react__": {
+			"title": "Role"
+		}
+	},
+	"notificationPref": {
+		"__type__": "string",
+		"__optional__": true,
+		"__options__": ["none", "both", "email", "text"],
+		"__react__": {
+			"options": [["none", "No notifications"], ["both", "Email and SMS"], ["email", "Email"], ["text", "SMS"]],
+			"title": "Notification Preference"
+		}
+	},
+	"eDFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"],
+		"__optional__": true
+	},
+	"hormoneFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"],
+		"__optional__": true
+	},
+	"hairLossFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"],
+		"__optional__": true
+	},
+	"urgentCareFlag": {
+		"__type__": "string",
+		"__options__": ["Y", "N"],
+		"__optional__": true
+	},
+	"practiceStates": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "ED Practice States"
+		}
+	},
+	"hrtPracticeStates": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "HRT Practice States"
+		}
+	},
+	"providerScheduleLink": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 255
+	},
+	"calendlyEmail": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 63
+	},
+	"doctorNPI": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "NPI"
+		}
+	},
+	"doctorDea": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "DEA"
+		}
+	},
+	"practiceClinicName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Clinic Name"
+		}
+	},
+	"practicePhoneNumber": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice"
+		}
+	},
+	"practiceAddress1": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Address"
+		}
+	},
+	"practiceAddress2": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Address"
+		}
+	},
+	"practiceCity": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice City"
+		}
+	},
+	"practiceState": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice State"
+		}
+	},
+	"practicePostalCode": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Zip Code"
+		}
+	},
+	"practiceCountry": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "Practice Country"
+		}
+	},
+	"dsClinicId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "DoseSpot Clinic ID"
+		}
+	},
+	"dsClinicianId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "DoseSpot Clinician ID"
+		}
+	},
+	"activeFlag": {
+		"__type__": "string",
+		"__maximum__": 1,
+		"__optional__": true,
+		"__react__": {
+			"title": "Active"
+		},
+		"__sql__": {
+			"opts": "default 'Y'"
+		}
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

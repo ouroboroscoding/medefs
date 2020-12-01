@@ -1,0 +1,37 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"customerId": {"unique": null}
+		},
+		"primary": "id",
+		"table": "wd_eligibility",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "WdEligibility",
+
+	"id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+	"customerId": {
+		"__type__": "int"
+	},
+	"memberSince": {
+		"__type__": "datetime"
+	},
+	"memberThru": {
+		"__type__": "datetime"
+	},
+	"createdAt": {
+		"__type__": "datetime"
+	},
+	"updatedAt": {
+		"__type__": "datetime"
+	}
+}

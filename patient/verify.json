@@ -1,0 +1,24 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["key"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"key": {"unique": null}
+		},
+		"primary": "_account",
+		"table": "patient_verify"
+	},
+
+	"__name__": "Patient_Forgot",
+
+	"_account": {
+		"__type__":"uuid"
+	},
+	"key": {
+		"__type__": "string",
+		"__regex__": "^[0-9a-f]{32}$",
+		"__sql__": "char(32)"
+	}
+}

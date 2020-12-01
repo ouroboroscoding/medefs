@@ -1,0 +1,110 @@
+{
+	"__react__": {
+		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"],
+		"results": ["userName", "firstName", "lastName"],
+		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"]
+	},
+
+	"__name__": "CSR_AgentMemo",
+
+	"_id": {
+		"__type__":"uuid",
+		"__optional__": true,
+		"__react__": {
+			"title": "ID"
+		}
+	},
+
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"memo_id": {
+		"__type__":"int",
+		"__react__": {
+			"title": "Memo ID"
+		}
+	},
+
+	"userName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "User"
+		}
+	},
+
+	"password": {
+		"__type__": "string",
+		"__react__": {
+			"title": "Password",
+			"regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})"
+		}
+	},
+
+	"firstName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Name"
+		}
+	},
+
+	"lastName": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Surname"
+		}
+	},
+
+	"email": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "E-mail Address"
+		}
+	},
+
+	"dsClinicId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "DoseSpot Clinic ID"
+		}
+	},
+
+	"dsClinicianId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "DoseSpot Clinician ID"
+		}
+	},
+
+	"claims_max": {
+		"__type__": "uint",
+		"__maximum__": 50,
+		"__react__": {
+			"default": 20,
+			"title": "Maximum self-claims"
+		}
+	},
+
+	"claims_timeout": {
+		"__type__": "uint",
+		"__options__": [48, 96, 144],
+		"__react__": {
+			"default": 48,
+			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]],
+			"title": "Maximum claim hold"
+		}
+	}
+}

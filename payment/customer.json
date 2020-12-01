@@ -1,0 +1,39 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["_created", "_updated", "card_hash"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {},
+		"primary": "_id",
+		"table": "payment_customer",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_bin"
+	},
+
+	"__name__": "Payment_Customer",
+
+	"_id": {
+		"__type__": "string",
+		"__regex__": "^[a-zA-Z0-9_-]{6,16}$",
+		"__sql__": "char(16)"
+	},
+	"_created": {
+		"__type__": "timestamp",
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"_updated": {
+		"__type__": "timestamp",
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+	"card_hash": {
+		"__type__": "base64",
+		"__maximum__": 64,
+		"__sql__": "char(64)"
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"changes": ["user"],
+		"create": ["_created", "email", "passwd", "verified", "locale", "crm_type", "crm_id", "rx_type", "rx_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"email": {"unique": null},
+			"crm": {"unique": ["crm_type", "crm_id"]}
+		},
+		"primary": "_id",
+		"table": "patient_account"
+	},
+
+	"__react__": {
+		"create": ["email", "passwd", "type", "crm_id"],
+		"results": ["_id", "email", "type", "crm_id"],
+		"search": ["_id", "email", "type", "crm_id"],
+		"update": ["email", "type", "crm_id"]
+	},
+
+	"__name__": "Patient_Account",
+
+	"_id": {
+		"__type__":"uuid",
+		"__react__": {
+			"title": "ID"
+		}
+	},
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"email": {
+		"__type__":"string",
+		"__maximum__": 127,
+		"__react__": {
+			"title": "Email Address"
+		}
+	},
+	"passwd": {
+		"__type__":"string",
+		"__regex__":"^[0-9a-fA-F]{72}$",
+		"__sql__": "char(72)",
+		"__react__": {
+			"regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})",
+			"title": "Password",
+			"type": "password"
+		}
+	},
+	"verified": {
+		"__type__": "bool",
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+	"locale": {
+		"__type__": "string",
+		"__regex__": "^[a-z]{2}-[A-Z]{2}$",
+		"__sql__": "char(5)",
+		"__react__": {
+			"options": [["en-US", "U.S. English"]],
+			"title": "Language",
+			"type": "hidden"
+		}
+	},
+	"crm_type": {
+		"__type__": "string",
+		"__options__": ["knk", "mems"],
+		"__react__": {
+			"options": [["knk", "Konnektive"], ["mems", "ME Micro Services"]],
+			"title": "CRM Type"
+		}
+	},
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	},
+	"rx_type": {
+		"__type__": "string",
+		"__optional__": true,
+		"__options__": ["ds", "ana"],
+		"__react__": {
+			"options": [["ds", "DoseSpot"], ["ana", "Anazao"]],
+			"title": "Prescription Type"
+		}
+	},
+	"rx_id": {
+		"__type__": "string",
+		"__optional__": true,
+		"__maximum__": 36
+	}
+}

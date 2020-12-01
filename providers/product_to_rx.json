@@ -1,0 +1,50 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["_created", "_updated", "customer_id", "product_id", "ds_id", "user_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"cust_prod": {"unique": ["customer_id", "product_id"]},
+			"ds_id": {"unique": null}
+		},
+		"primary": false,
+		"table": "providers_product_to_rx",
+		"charset": "utf8",
+		"collate": "utf8_bin"
+	},
+
+	"__name__": "Providers_ProductToRX",
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"customer_id": {
+		"__type__": "uint"
+	},
+
+	"product_id": {
+		"__type__": "uint"
+	},
+
+	"ds_id": {
+		"__type__": "uint"
+	},
+
+	"user_id": {
+		"__type__": "int"
+	}
+}

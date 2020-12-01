@@ -1,0 +1,39 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["timestamp", "createdAt", "updatedAt"],
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"user": {"unique": null}
+		},
+		"primary": "user",
+		"table": "customer_claimed_last",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CustomerClaimedLast",
+
+	"user": {
+		"__type__": "int"
+	},
+	"timestamp": {
+		"__type__": "timestamp"
+	},
+	"createdAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+	"updatedAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	}
+}

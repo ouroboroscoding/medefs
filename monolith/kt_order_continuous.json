@@ -1,0 +1,59 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"create": ["customerId", "orderId", "active", "status", "createdAt", "updatedAt"],
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"cust_order": {"unique": ["customerId", "orderId"]}
+		},
+		"primary": "id",
+		"table": "kt_order_continuous",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "KtOrderContinuous",
+
+	"id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+	"customerId": {
+		"__type__": "uint"
+	},
+	"orderId": {
+		"__type__": "string",
+		"__maximum__": 10
+	},
+	"active": {
+		"__type__": "bool",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+	"status": {
+		"__type__": "string",
+		"__optional__": true,
+		"__options__": ["PENDING", "COMPLETE", "DECLINED", "CANCELLED"],
+		"__sql__": {
+			"opts": "not null default 'PENDING'"
+		}
+	},
+	"createdAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "not null default CURRENT_TIMESTAMP"
+		}
+	},
+	"updatedAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "not null default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	}
+}
