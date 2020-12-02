@@ -108,9 +108,30 @@
 		"__type__": "int",
 		"__optional__": true
 	},
+	"ktCustomerId": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true
+	},
 	"complete": {
 		"__type__": "string",
 		"__maximum__": 1
+	},
+	"complete_CHRT": {
+		"__type-_": "string",
+		"__options__": ["Y", "N"]
+	},
+	"complete_CED": {
+		"__type-_": "string",
+		"__options__": ["Y", "N"]
+	},
+	"videoWatched": {
+		"__type-_": "string",
+		"__options__": ["Y", "N"]
+	},
+	"orderCreated": {
+		"__type-_": "string",
+		"__options__": ["Y", "N"]
 	},
 	"createdAt": {
 		"__type__": "datetime"
