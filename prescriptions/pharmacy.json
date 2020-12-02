@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "name", "pharmacyId", "reports_to"],
+		"create": ["_created", "name", "pharmacyId", "reports_to", "active"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -39,5 +39,9 @@
 		"__type__": "string",
 		"__maximum__": 65536,
 		"__optional__": true
+	},
+
+	"active": {
+		"__type__": "bool"
 	}
 }
