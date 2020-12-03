@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": true,
-		"create": ["customerId", "orderId", "active", "status", "createdAt", "updatedAt"],
+		"create": ["customerId", "orderId", "active", "status", "user", "createdAt", "updatedAt"],
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
@@ -41,6 +41,10 @@
 		"__sql__": {
 			"opts": "not null default 'PENDING'"
 		}
+	},
+	"user": {
+		"__type__": "int",
+		"__optional__": true
 	},
 	"createdAt": {
 		"__type__": "datetime",
