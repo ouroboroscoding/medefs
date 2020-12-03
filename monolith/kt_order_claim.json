@@ -1,7 +1,8 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["orderId", "user", "transferredBy", "createdAt", "updatedAt"],
+		"create": ["orderId", "continuous", "user", "transferredBy",
+					"createdAt", "updatedAt"],
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
@@ -23,6 +24,12 @@
 	"orderId": {
 		"__type__": "string",
 		"__maximum__": 10
+	},
+	"continuous": {
+		"__type__": "bool",
+		"__sql__": {
+			"opts": "default 0"
+		}
 	},
 	"user": {
 		"__type__": "int"
