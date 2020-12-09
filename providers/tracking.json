@@ -75,5 +75,5 @@
 		"__type__": "string",
 		"__maximum__": 36,
 		"__optional__": true
-	},
+	}
 }
