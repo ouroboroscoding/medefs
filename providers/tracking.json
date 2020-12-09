@@ -65,8 +65,15 @@
 		"__optional__": true
 	},
 
-	"customer_id": {
-		"__type__": "uint",
+	"crm_type": {
+		"__type__": "string",
+		"__options__": ["knk", "ms"],
 		"__optional__": true
-	}
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36,
+		"__optional__": true
+	},
 }
