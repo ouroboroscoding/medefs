@@ -84,7 +84,7 @@
 		"__maximum__": 255,
 		"__optional__": true
 	},
-	"addId": {
+	"affId": {
 		"__type__": "string",
 		"__maximum__": 255,
 		"__optional__": true
@@ -118,19 +118,19 @@
 		"__maximum__": 1
 	},
 	"complete_CHRT": {
-		"__type-_": "string",
+		"__type__": "string",
 		"__options__": ["Y", "N"]
 	},
 	"complete_CED": {
-		"__type-_": "string",
+		"__type__": "string",
 		"__options__": ["Y", "N"]
 	},
 	"videoWatched": {
-		"__type-_": "string",
+		"__type__": "string",
 		"__options__": ["Y", "N"]
 	},
 	"orderCreated": {
-		"__type-_": "string",
+		"__type__": "string",
 		"__options__": ["Y", "N"]
 	},
 	"createdAt": {
