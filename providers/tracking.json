@@ -2,11 +2,11 @@
 	"__mysql__": {
 		"auto_primary": true,
 		"create": ["_created","_updated","memo_id","sesh","action","start",
-					"resolution","end","customer_id"],
+					"resolution","end", "crm_type", "crm_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"user_cust": ["memo_id", "customer_id"],
+			"user_crm": ["memo_id", "crm_type", "crm_id"],
 			"sesh": null
 		},
 		"table": "providers_tracking",
