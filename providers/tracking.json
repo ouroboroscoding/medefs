@@ -1,0 +1,79 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"create": ["_created","_updated","memo_id","sesh","action","start",
+					"resolution","end","customer_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"user_cust": ["memo_id", "customer_id"],
+			"sesh": null
+		},
+		"table": "providers_tracking",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "Providers_Tracking",
+
+	"_id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"memo_id": {
+		"__type__": "int"
+	},
+
+	"sesh": {
+		"__type__": "uuid"
+	},
+
+	"action": {
+		"__type__": "string",
+		"__options__": ["signin", "viewed"]
+	},
+
+	"start": {
+		"__type__": "timestamp"
+	},
+
+	"resolution": {
+		"__type__": "string",
+		"__options__": ["signout", "new_signin", "approved", "declined", "transferred"],
+		"__optional__": true
+	},
+
+	"end": {
+		"__type__": "timestamp",
+		"__optional__": true
+	},
+
+	"crm_type": {
+		"__type__": "string",
+		"__options__": ["knk", "ms"],
+		"__optional__": true
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36,
+		"__optional__": true
+	}
+}
