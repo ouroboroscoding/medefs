@@ -23,17 +23,26 @@
 	},
 	"customerId": {
 		"__type__": "string",
-		"__maximum__": 255
+		"__maximum__": 255,
+		"__react__": {
+			"title": "Customer ID"
+		}
 	},
 	"firstName": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "First Name"
+		}
 	},
 	"lastName": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Last Name"
+		}
 	},
 	"companyName": {
 		"__type__": "string",
@@ -68,12 +77,18 @@
 	"phoneNumber": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Phone #"
+		}
 	},
 	"emailAddress": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Email"
+		}
 	},
 	"billShipSame": {
 		"__type__": "string",
