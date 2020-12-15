@@ -56,7 +56,7 @@
 
 	"resolution": {
 		"__type__": "string",
-		"__options__": ["signout", "new_signin", "approved", "declined", "transferred"],
+		"__options__": ["signout", "new_signin", "approved", "declined", "transferred", "x"],
 		"__optional__": true
 	},
 
