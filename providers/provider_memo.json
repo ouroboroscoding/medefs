@@ -104,7 +104,7 @@
 		"__type__": "string",
 		"__options__": ["Y", "N"],
 		"__react__": {
-			"title": "Erectile Dysfunction"
+			"title": "Handles ED"
 		}
 	},
 
@@ -112,7 +112,7 @@
 		"__type__": "string",
 		"__options__": ["Y", "N"],
 		"__react__": {
-			"title": "Hormone Replacement Therapy"
+			"title": "Handles HRT"
 		}
 	},
 
@@ -120,7 +120,7 @@
 		"__type__": "string",
 		"__options__": ["Y", "N"],
 		"__react__": {
-			"title": "Hair Loss"
+			"title": "Handles Hair Loss"
 		}
 	},
 
