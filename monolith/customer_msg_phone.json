@@ -56,7 +56,7 @@
 			"opts": "default 0"
 		}
 	},
-	"totalOutgoing": {
+	"totalOutGoing": {
 		"__type__": "int",
 		"__optional__": true,
 		"__sql__": {
