@@ -1,11 +1,11 @@
 {
 	"__mysql__": {
 		"auto_primary": true,
-		"create": ["customerId", "orderId", "active", "status", "user", "createdAt", "updatedAt"],
+		"create": ["customerId", "orderId", "purchaseId", "active", "status", "user", "createdAt", "updatedAt"],
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
-			"cust_order": {"unique": ["customerId", "orderId"]}
+			"cust_order": {"unique": ["customerId", "orderId", "purchaseId"]}
 		},
 		"primary": "id",
 		"table": "kt_order_continuous",
@@ -24,6 +24,10 @@
 		"__type__": "uint"
 	},
 	"orderId": {
+		"__type__": "string",
+		"__maximum__": 10
+	},
+	"purchaseId": {
 		"__type__": "string",
 		"__maximum__": 10
 	},
