@@ -65,6 +65,7 @@
 	"1512": "SMS Workflow method crashed",
 	"1513": "User doesn't own claim",
 	"1514": "No Provider to transfer to",
+	"1515": "Can't update non-pending order",
 
 	"_": "Dosespot Errors",
 	"1600": "Failed to get token",
