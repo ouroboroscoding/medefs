@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "crm_type", "crm_id", "crm_order", "crm_purchase", "rx_id", "step"],
+		"create": ["_created", "_updated", "crm_type", "crm_id", "crm_order", "crm_purchase", "rx_id", "step"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -23,6 +23,14 @@
 		"__optional__": true,
 		"__sql__": {
 			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
 		}
 	},
 
