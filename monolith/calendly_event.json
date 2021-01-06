@@ -1,0 +1,76 @@
+{
+	"__mysql__": {
+		"auto_primary": true,
+		"create": ["name", "uri", "type", "providers", "createdAt", "updatedAt"],
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {
+			"name": null
+		},
+		"primary": "id",
+		"table": "calendly_event",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CalendlyEvent",
+
+	"id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+
+	"name": {
+		"__type__": "string",
+		"__maximum__": 63
+	},
+
+	"uri": {
+		"__type__": "string",
+		"__regex__": "^\/[a-z-]+\/[a-z-]+$",
+		"__react__": {
+			"title": "Event specific URI: /male-excel-hrt/north-carolina"
+		},
+		"__sql__": {
+			"type": "varchar(63)"
+		}
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["ed", "hrt"],
+		"__react__": {
+			"options": [["ed", "ED"], ["hrt", "HRT"]],
+			"type": "select"
+		}
+	},
+
+	"providers": {
+		"__type__": "string",
+		"__maximum__": "63",
+		"__react__": {
+			"title": "Associated Providers",
+			"type": "multiselectcsv"
+		},
+		"__sql__": {
+			"type": "varchar(63)"
+		}
+	},
+
+	"createdAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"updatedAt": {
+		"__type__": "datetime",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	}
+}
