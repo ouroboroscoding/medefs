@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": true,
-		"create": ["name", "uri", "type", "providers", "createdAt", "updatedAt"],
+		"create": ["name", "uri", "type", "state", "provider", "createdAt", "updatedAt"],
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
@@ -53,15 +53,25 @@
 		}
 	},
 
-	"providers": {
+	"state": {
 		"__type__": "string",
-		"__maximum__": "63",
+		"__optional__": true,
+		"__regex__": "^[A-Z]{2}$",
 		"__react__": {
-			"title": "Associated Providers",
-			"type": "multiselectcsv"
+			"title": "State (optional)",
+			"type": "select"
 		},
 		"__sql__": {
-			"type": "varchar(63)"
+			"type": "char(2)"
+		}
+	},
+
+	"provider": {
+		"__type__": "int",
+		"__optional__": true,
+		"__react__": {
+			"title": "Provider (optional)",
+			"type": "select"
 		}
 	},
 
