@@ -5,7 +5,10 @@
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
-			"name": null
+			"type_name": {"unique": ["type", "name"]},
+			"uri": {"unique": null},
+			"state": null,
+			"provider": null
 		},
 		"primary": "id",
 		"table": "calendly_event",
@@ -35,7 +38,7 @@
 
 	"uri": {
 		"__type__": "string",
-		"__regex__": "^\/[a-z-]+\/[a-z-]+$",
+		"__regex__": "^\/[a-z0-9-]+\/[a-z0-9-]+$",
 		"__react__": {
 			"title": "Event specific URI: /male-excel-hrt/north-carolina"
 		},
