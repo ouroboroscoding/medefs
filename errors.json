@@ -66,11 +66,13 @@
 	"1513": "User doesn't own claim",
 	"1514": "No Provider to transfer to",
 	"1515": "Can't update non-pending order",
+	"1516": "Must set one of state or provider on a Calendly event",
 
-	"_": "Dosespot Errors",
+	"_": "Dosespot/Prescription Errors",
 	"1600": "Failed to get token",
 	"1601": "HTTP Request failed",
 	"1602": "REST Error",
+	"1603": "Can't change pharmacy on product",
 
 	"_": "USPS Errors",
 	"1700": "USPS Connecton Failure",
