@@ -16,9 +16,9 @@
 
 	"__react__": {
 		"primary": "id",
-		"create": ["name", "uri", "type", "providers"],
-		"results": ["id", "name", "uri", "type", "providers"],
-		"update": ["name", "uri", "type", "providers"]
+		"create": ["name", "uri", "type", "state", "provider"],
+		"results": ["id", "name", "uri", "type", "state", "provider"],
+		"update": ["name", "uri", "type", "state", "provider"]
 	},
 
 	"__name__": "CalendlyEvent",
