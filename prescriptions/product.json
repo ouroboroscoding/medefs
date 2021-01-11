@@ -16,7 +16,7 @@
 	"__react__": {
 		"create": ["title", "type", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
 		"results": ["title", "type", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
-		"update": ["title", "!type", "!pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
+		"update": ["title", "type", "!pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
 	},
 
 	"__name__": "Prescriptions_Product",
@@ -38,7 +38,7 @@
 		"__type__": "string",
 		"__maximum__": 127,
 		"__react__": {
-			"title": "Title (Internal)"
+			"title": "Title"
 		}
 	},
 
@@ -52,7 +52,10 @@
 	},
 
 	"pharmacy": {
-		"__type__": "uint"
+		"__type__": "uint",
+		"__react__": {
+			"type": "select"
+		}
 	},
 
 	"display": {
