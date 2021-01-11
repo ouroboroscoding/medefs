@@ -2,7 +2,7 @@
 	"__mysql__": {
 		"auto_primary": "UUID()",
 		"changes": ["user"],
-		"create": ["_created", "pharmacy", "key", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
+		"create": ["_created", "pharmacy", "key", "title", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -13,9 +13,9 @@
 	},
 
 	"__react__": {
-		"create": ["pharmacy", "key", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
-		"results": ["key", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
-		"update": ["key", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
+		"create": ["pharmacy", "key", "title", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
+		"results": ["key", "title", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
+		"update": ["key", "title", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
 	},
 
 	"__name__": "Prescriptions_Product",
@@ -43,6 +43,14 @@
 		"__regex__": "^[a-zA-Z0-9_]{1,63}$",
 		"__sql__": {
 			"type": "varchar(63)"
+		}
+	},
+
+	"title": {
+		"__type__": "string",
+		"__maximum__": 127,
+		"__react__": {
+			"title": "Title (Internal)"
 		}
 	},
 
