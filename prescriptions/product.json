@@ -16,7 +16,7 @@
 	"__react__": {
 		"create": ["title", "type", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
 		"results": ["title", "type", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
-		"update": ["title", "type", "!pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
+		"update": ["title", "type", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
 	},
 
 	"__name__": "Prescriptions_Product",
