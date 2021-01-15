@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["_created", "_updated", "customer_id", "product_id", "ds_id", "user_id"],
+		"create": ["_created", "_updated", "customer_id", "product_id", "ds_id", "approved", "user_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -42,6 +42,14 @@
 
 	"ds_id": {
 		"__type__": "uint"
+	},
+
+	"approved": {
+		"__type__": "bool",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "not null default 0"
+		}
 	},
 
 	"user_id": {

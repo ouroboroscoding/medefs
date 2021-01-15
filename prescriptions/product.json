@@ -2,20 +2,21 @@
 	"__mysql__": {
 		"auto_primary": "UUID()",
 		"changes": ["user"],
-		"create": ["_created", "pharmacy", "key", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
+		"create": ["_created", "title", "type", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"pharm_key": {"unique": ["pharmacy", "key"]}
+			"title": {"unique": null},
+			"i_type_pharmacy": ["type", "pharmacy"]
 		},
 		"table": "prescriptions_product",
 		"engine": "InnoDB"
 	},
 
 	"__react__": {
-		"create": ["pharmacy", "key", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
-		"results": ["key", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
-		"update": ["key", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
+		"create": ["title", "type", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
+		"results": ["title", "type", "pharmacy", "display", "ndc", "quantity", "supply", "directions", "unit_id"],
+		"update": ["title", "type", "display", "ndc", "quantity", "supply", "directions", "unit_id"]
 	},
 
 	"__name__": "Prescriptions_Product",
@@ -33,16 +34,27 @@
 		}
 	},
 
-	"pharmacy": {
+	"title": {
 		"__type__": "string",
-		"__options__": ["WellDyneRX", "AnazaoHealth"]
+		"__maximum__": 127,
+		"__react__": {
+			"title": "Title"
+		}
 	},
 
-	"key": {
+	"type": {
 		"__type__": "string",
-		"__regex__": "^[a-zA-Z0-9_]{1,63}$",
-		"__sql__": {
-			"type": "varchar(63)"
+		"__options__": ["ed", "hrt"],
+		"__react__": {
+			"options": [["ed", "ED"], ["hrt", "HRT"]],
+			"type": "select"
+		}
+	},
+
+	"pharmacy": {
+		"__type__": "uint",
+		"__react__": {
+			"type": "select"
 		}
 	},
 
