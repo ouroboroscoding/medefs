@@ -1,0 +1,54 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["_created", "uri", "name", "email", "crm_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {},
+		"primary": "_key",
+		"table": "providers_calendly_single_use",
+		"charset": "utf8",
+		"collate": "utf8_bin"
+	},
+
+	"__name__": "Providers_CalendlySingleUse",
+
+	"_key": {
+		"__type__": "string",
+		"__regex__": "^[a-zA-Z0-9_]{6}$",
+		"__sql__": {
+			"type": "char(6)"
+		}
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"uri": {
+		"__type__": "string",
+		"__regex__": "^\/[a-z0-9-]+\/[a-z0-9-]+$",
+		"__sql__": {
+			"type": "varchar(63)"
+		}
+	},
+
+	"name": {
+		"__type__": "string",
+		"__maximum__": 63
+	},
+
+	"email": {
+		"__type__": "string",
+		"__maximum__": 63
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	}
+}
