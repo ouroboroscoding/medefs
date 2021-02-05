@@ -1,0 +1,41 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "ip", "agent"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"code": {"unique": null}
+		},
+		"primary": "_id",
+		"table": "link_url",
+		"charset": "utf8",
+		"collate": "utf8_general_ci"
+	},
+
+	"__name__": "Link_Url",
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"url_id": {
+		"__type__": "uuid"
+	},
+
+	"date": {
+		"__type__": "date"
+	},
+
+	"time": {
+		"__type__": "time"
+	},
+
+	"ip": {
+		"__type__": "ip"
+	}
+}
