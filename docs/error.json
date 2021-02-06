@@ -1,0 +1,50 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "code", "description", "example"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"code": {"unique": null}
+		},
+		"primary": "_id",
+		"table": "docs_error"
+	},
+
+	"__name__": "Docs_Noun",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"code": {
+		"__type__": "uint"
+	},
+
+	"description": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+
+	"example": {
+		"__type__": "string",
+		"__optional__": true
+	}
+}
