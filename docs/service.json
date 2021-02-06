@@ -8,7 +8,7 @@
 			"name": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "auth_forgot"
+		"table": "docs_service"
 	},
 
 	"__name__": "Docs_Service",
@@ -30,7 +30,7 @@
 		"__type__":"timestamp",
 		"__optional__": true,
 		"__sql__": {
-			"opts": "default CURRENT_TIMESTAMP update CURRENT_TIMESTAMP"
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
 		}
 	},
 

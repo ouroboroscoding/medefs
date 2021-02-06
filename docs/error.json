@@ -30,7 +30,7 @@
 		"__type__":"timestamp",
 		"__optional__": true,
 		"__sql__": {
-			"opts": "default CURRENT_TIMESTAMP update CURRENT_TIMESTAMP"
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
 		}
 	},
 
@@ -45,6 +45,7 @@
 
 	"example": {
 		"__type__": "string",
-		"__optional__": true
+		"__optional__": true,
+		"__maximum__": 65536
 	}
 }

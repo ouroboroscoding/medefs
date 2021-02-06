@@ -1,15 +1,15 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "_updated", "uri", "title", "description",
-					"session", "data", "response"],
+		"create": ["_created", "_updated", "service", "uri", "title",
+					"description", "session", "data", "response"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
 			"uri": {"unique": null}
 		},
 		"primary": "_id",
-		"table": "auth_forgot"
+		"table": "docs_noun"
 	},
 
 	"__name__": "Docs_Noun",
@@ -31,7 +31,7 @@
 		"__type__":"timestamp",
 		"__optional__": true,
 		"__sql__": {
-			"opts": "default CURRENT_TIMESTAMP update CURRENT_TIMESTAMP"
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
 		}
 	},
 
