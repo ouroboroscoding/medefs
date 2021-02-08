@@ -48,6 +48,11 @@
 		}
 	},
 
+	"dropped_reason": {
+		"__type__": "int",
+		"__optional__": true
+	},
+
 	"createdAt": {
 		"__type__": "datetime",
 		"__optional__": true
