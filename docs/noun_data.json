@@ -1,6 +1,11 @@
 {
 	"__array__": "unique",
+
 	"field": "string",
 	"type": "string",
-	"description": "string"
+	"description": "string",
+
+	"__react__": {
+		"title": "Request Data"
+	}
 }

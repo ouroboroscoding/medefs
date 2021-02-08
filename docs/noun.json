@@ -12,6 +12,12 @@
 		"table": "docs_noun"
 	},
 
+	"__react__": {
+		"primary": "_id",
+		"create": ["uri", "title", "description", "session", "data", "response"],
+		"update": ["uri", "title", "description", "session", "data", "response"]
+	},
+
 	"__name__": "Docs_Noun",
 
 	"_id": {
@@ -41,7 +47,10 @@
 
 	"uri": {
 		"__type__": "string",
-		"__maximum__": 15
+		"__maximum__": 15,
+		"__react__": {
+			"title": "URI"
+		}
 	},
 
 	"title": {
@@ -55,7 +64,10 @@
 	},
 
 	"session": {
-		"__type__": "bool"
+		"__type__": "bool",
+		"__react__": {
+			"title": "Requires Session?"
+		}
 	},
 
 	"data": {
