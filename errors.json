@@ -87,7 +87,7 @@
 	"1804": "Invalid report format",
 
 	"_": "Patient Errors",
-	"1900": "Email already in use",
+	"1900": "Email/CRM ID already in use",
 	"1901": "No such user / password invalid",
 	"1902": "Password forgot key already exists",
 	"1903": "Password forgot key is invalid",
