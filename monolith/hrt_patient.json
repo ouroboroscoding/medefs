@@ -35,6 +35,11 @@
 		"__options__": ["Purchased Lab Kit", "Watched Video", "Ordered Lab Kit", "Shipped Lab Kit", "Delivered Lab Kit", "Received Lab Results", "Sent H2 Questions and Calendly", "Received H2", "Received Calendly", "Created $0 Pending", "Missed Calendly", "Provider Approval", "Dropped"]
 	},
 
+	"joinDate": {
+		"__type__": "datetime",
+		"__optional__": true
+	},
+
 	"labSentAt": {
 		"__type__": "datetime",
 		"__optional__": true
