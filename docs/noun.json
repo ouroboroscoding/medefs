@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "_updated", "service", "uri", "title",
+		"create": ["_created", "_updated", "service", "method", "uri", "title",
 					"description", "session", "data", "response"],
 		"db": "mems",
 		"host": "primary",
@@ -14,8 +14,8 @@
 
 	"__react__": {
 		"primary": "_id",
-		"create": ["uri", "title", "description", "session", "data", "response"],
-		"update": ["uri", "title", "description", "session", "data", "response"]
+		"create": ["method", "uri", "title", "description", "session", "data", "response"],
+		"update": ["method", "uri", "title", "description", "session", "data", "response"]
 	},
 
 	"__name__": "Docs_Noun",
@@ -43,6 +43,14 @@
 
 	"service": {
 		"__type__": "uuid"
+	},
+
+	"method": {
+		"__type__": "string",
+		"__options__": ["DELETE", "GET", "POST", "PUT"],
+		"__react__": {
+			"options": [["DELETE", "Delete"], ["GET", "Read"], ["POST", "Create"], ["PUT", "Update"]]
+		}
 	},
 
 	"uri": {
