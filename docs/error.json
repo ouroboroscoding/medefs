@@ -11,6 +11,11 @@
 		"table": "docs_error"
 	},
 
+	"__react__": {
+		"primary": "_id",
+		"order": ["code", "description", "example"]
+	},
+
 	"__name__": "Docs_Noun",
 
 	"_id": {
