@@ -76,7 +76,6 @@
 
 	"session": {
 		"__type__": "bool",
-		"__optional__": true,
 		"__react__": {
 			"title": "Requires Session?"
 		}
