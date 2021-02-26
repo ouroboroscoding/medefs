@@ -101,5 +101,8 @@
 	"1911": "Account already setup",
 
 	"_": "Customer Errors",
-	"2000": "Customer already exists"
+	"2000": "Customer already exists",
+
+	"_": "justCall Errors",
+	"2100": "API Request failed"
 }

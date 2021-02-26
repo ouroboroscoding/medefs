@@ -1,7 +1,9 @@
 {
 	"__mysql__": {
 		"auto_primary": true,
-		"create": ["customerId", "orderId", "purchaseId", "active", "status", "user", "createdAt", "updatedAt"],
+		"create": ["customerId", "orderId", "purchaseId", "active",
+					"medsNotWorking", "status", "user", "createdAt",
+					"updatedAt"],
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
@@ -32,6 +34,13 @@
 		"__maximum__": 10
 	},
 	"active": {
+		"__type__": "bool",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+	"medsNotWorking": {
 		"__type__": "bool",
 		"__optional__": true,
 		"__sql__": {
