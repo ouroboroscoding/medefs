@@ -68,7 +68,10 @@
 
 	"description": {
 		"__type__": "string",
-		"__maximum__": 65536
+		"__maximum__": 65536,
+		"__react__": {
+			"type": "textarea"
+		}
 	},
 
 	"session": {
