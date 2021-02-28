@@ -6,7 +6,7 @@
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"uri": {"unique": ["uri","method"]}
+			"request": {"unique": ["service","uri","method"]}
 		},
 		"primary": "_id",
 		"table": "docs_noun"
