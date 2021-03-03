@@ -103,6 +103,9 @@
 	"_": "Customer Errors",
 	"2000": "Customer already exists",
 
-	"_": "justCall Errors",
-	"2100": "API Request failed"
+	"_": "JustCall Errors",
+	"2100": "API Request failed",
+
+	"_": "HubSpot Errors",
+	"2200": "API Request failed"
 }
