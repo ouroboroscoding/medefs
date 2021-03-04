@@ -99,6 +99,7 @@
 	"1909": "RX already set",
 	"1910": "Invalid DOB",
 	"1911": "Account already setup",
+	"1912": "Invalid CRM account",
 
 	"_": "Customer Errors",
 	"2000": "Customer already exists",
