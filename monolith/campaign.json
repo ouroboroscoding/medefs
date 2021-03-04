@@ -22,13 +22,14 @@
 
 	"type": {
 		"__type__": "string",
-		"__options__": ["ed", "hrt", "zrt", "hl"],
+		"__options__": ["ed", "hrt", "zrt", "hl", "cc"],
 		"__react__": {
 			"options": [
 				["ed", "Erectile Dysfunction"],
 				["hrt", "Hormone Replacement Therapy"],
 				["zrt", "ZRT Labratory"],
-				["hl", "Hair Loss"]
+				["hl", "Hair Loss"],
+				["cc", "Credit Card Change"]
 			],
 			"type": "select"
 		}
