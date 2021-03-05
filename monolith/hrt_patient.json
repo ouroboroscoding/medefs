@@ -58,6 +58,11 @@
 		"__optional__": true
 	},
 
+	"treatment_cycle": {
+		"__type__": "datetime",
+		"__optional__": true
+	},
+
 	"createdAt": {
 		"__type__": "datetime",
 		"__optional__": true
