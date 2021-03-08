@@ -1,0 +1,72 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "code", "url", "views"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"code": {"unique": null}
+		},
+		"primary": "_id",
+		"table": "link_url",
+		"charset": "utf8",
+		"collate": "utf8_general_ci"
+	},
+
+	"__react__": {
+		"results": ["_created", "code", "url", "views"]
+	},
+
+	"__name__": "Link_Url",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		},
+		"__react__": {
+			"title": "Date Created"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"code": {
+		"__type__": "string",
+		"__regex__": "^[a-zA-Z0-9_]{6}$",
+		"__sql__": {
+			"type": "char(6)"
+		}
+	},
+
+	"url": {
+		"__type__": "string",
+		"__maximum__": 65536,
+		"__react__": {
+			"title": "URL"
+		}
+	},
+
+	"views": {
+		"__type__": "uint",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
+		},
+		"__react__": {
+			"title": "Views Count"
+		}
+	}
+}
