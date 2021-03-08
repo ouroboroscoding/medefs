@@ -1,0 +1,91 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "service", "method", "uri", "title",
+					"description", "session", "data", "response"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"request": {"unique": ["service","uri","method"]}
+		},
+		"primary": "_id",
+		"table": "docs_noun"
+	},
+
+	"__react__": {
+		"primary": "_id",
+		"create": ["method", "uri", "title", "description", "session", "data", "response"],
+		"update": ["method", "uri", "title", "description", "session", "data", "response"]
+	},
+
+	"__name__": "Docs_Noun",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"service": {
+		"__type__": "uuid"
+	},
+
+	"method": {
+		"__type__": "string",
+		"__options__": ["DELETE", "GET", "POST", "PUT"],
+		"__react__": {
+			"options": [["DELETE", "Delete"], ["GET", "Read"], ["POST", "Create"], ["PUT", "Update"]]
+		}
+	},
+
+	"uri": {
+		"__type__": "string",
+		"__maximum__": 31,
+		"__react__": {
+			"title": "URI"
+		}
+	},
+
+	"title": {
+		"__type__": "string",
+		"__maximum__": 31
+	},
+
+	"description": {
+		"__type__": "string",
+		"__maximum__": 65536,
+		"__react__": {
+			"type": "textarea"
+		}
+	},
+
+	"session": {
+		"__type__": "bool",
+		"__react__": {
+			"title": "Requires Session?"
+		}
+	},
+
+	"data": {
+		"__type__": "json"
+	},
+
+	"response": {
+		"__type__": "json"
+	}
+}

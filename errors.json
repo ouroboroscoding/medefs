@@ -87,7 +87,7 @@
 	"1804": "Invalid report format",
 
 	"_": "Patient Errors",
-	"1900": "Email already in use",
+	"1900": "Email/CRM ID already in use",
 	"1901": "No such user / password invalid",
 	"1902": "Password forgot key already exists",
 	"1903": "Password forgot key is invalid",
@@ -99,7 +99,14 @@
 	"1909": "RX already set",
 	"1910": "Invalid DOB",
 	"1911": "Account already setup",
+	"1912": "Invalid CRM account",
 
 	"_": "Customer Errors",
-	"2000": "Customer already exists"
+	"2000": "Customer already exists",
+
+	"_": "JustCall Errors",
+	"2100": "API Request failed",
+
+	"_": "HubSpot Errors",
+	"2200": "API Request failed"
 }
