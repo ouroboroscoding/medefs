@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "code", "url"],
+		"create": ["_created", "_updated", "code", "url", "views"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -28,6 +28,14 @@
 		}
 	},
 
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
 	"code": {
 		"__type__": "string",
 		"__regex__": "^[a-zA-Z0-9_]{6}$",
@@ -39,5 +47,13 @@
 	"url": {
 		"__type__": "string",
 		"__maximum__": 65536
+	},
+
+	"views": {
+		"__type__": "uint",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
+		}
 	}
 }
