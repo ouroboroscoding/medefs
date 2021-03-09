@@ -13,6 +13,10 @@
 		"collate": "utf8mb4_0900_ai_ci"
 	},
 
+	"__react__": {
+		"create": ["comments", "dateReceived", "dateReported"]
+	},
+
 	"__name__": "HrtLabResult",
 
 	"id": {
@@ -51,12 +55,20 @@
 	"dateReceived": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Date Received",
+			"type": "date"
+		}
 	},
 	"dateReported": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Date Reported",
+			"type": "date"
+		}
 	},
 	"createdAt": {
 		"__type__": "datetime"

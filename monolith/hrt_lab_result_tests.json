@@ -15,6 +15,10 @@
 		"collate": "utf8mb4_0900_ai_ci"
 	},
 
+	"__react__": {
+		"create": ["sampleCollection", "name", "code", "resultLevel", "result", "unitOfMeasure", "range"]
+	},
+
 	"__name__": "HrtLabResultTests",
 
 	"id": {
@@ -32,17 +36,28 @@
 	},
 	"sampleCollection": {
 		"__type__": "datetime",
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Collection Date"
+		}
 	},
 	"name": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"type": "select",
+			"options": ["DHEAS", "Estradiol", "Free T3", "Free T4", "Progesterone", "PSA", "Ratio: T/SHBG", "SHBG", "Testosterone"]
+		}
 	},
 	"code": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"type": "select",
+			"options": ["B_EIA_E2", "B_EIA_T", "B_CALC_0018", "B_EIA_SHBG", "B_EIA_DS", "B_EIA_FT3", "B_EIA_PSA", "B_EIA_FT4", "B_EIA_PG", "B_LCMS_E2", "B_LCMS_T", "B_LCMS_DS"]
+		}
 	},
 	"result": {
 		"__type__": "string",
@@ -52,7 +67,12 @@
 	"unitOfMeasure": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Unit of Measure",
+			"type": "select",
+			"options": ["ng/dL", "ng/mL", "nmol/L", "pg/mL", "µg/dL"]
+		}
 	},
 	"range": {
 		"__type__": "string",
@@ -62,7 +82,12 @@
 	"resultLevel": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {
+			"title": "Result Level",
+			"type": "select",
+			"options": ["H", "L", "Ok"]
+		}
 	},
 	"rangeMinimum": {
 		"__type__": "string",
