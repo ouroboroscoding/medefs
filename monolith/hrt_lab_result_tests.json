@@ -18,7 +18,8 @@
 	"__name__": "HrtLabResultTests",
 
 	"id": {
-		"__type__": "int"
+		"__type__": "int",
+		"__optional__": true
 	},
 	"identifier": {
 		"__type__": "string",

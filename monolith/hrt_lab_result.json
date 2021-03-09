@@ -16,7 +16,8 @@
 	"__name__": "HrtLabResult",
 
 	"id": {
-		"__type__": "int"
+		"__type__": "int",
+		"__optional__": true
 	},
 	"identifier": {
 		"__type__": "string",
@@ -44,7 +45,7 @@
 	},
 	"comments": {
 		"__type__": "string",
-		"__maximum__": 4294967296,
+		"__maximum__": 2147483647,
 		"__optional__": true
 	},
 	"dateReceived": {
