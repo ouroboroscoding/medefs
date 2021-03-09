@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "_updated", "code", "url", "views"],
+		"create": ["_created", "_updated", "code", "url", "permanent", "views"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -56,6 +56,14 @@
 		"__maximum__": 65536,
 		"__react__": {
 			"title": "URL"
+		}
+	},
+
+	"permanent": {
+		"__type__": "bool",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default 0"
 		}
 	},
 
