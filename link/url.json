@@ -14,7 +14,7 @@
 	},
 
 	"__react__": {
-		"results": ["_created", "code", "url", "views"]
+		"results": ["_created", "code", "url", "permanent", "views"]
 	},
 
 	"__name__": "Link_Url",
