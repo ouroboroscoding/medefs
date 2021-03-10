@@ -31,7 +31,10 @@
 		"__sql__": "char(11)"
 	},
 	"user": {
-		"__type__": "int"
+		"__type__": "int",
+		"__react__": {
+			"title": "Agent"
+		}
 	},
 	"provider": {
 		"__type__": "int",
@@ -67,7 +70,7 @@
 		"__type__": "datetime",
 		"__optional__": true,
 		"__react__": {
-			"title": "Claimed At"
+			"title": "Claimed"
 		},
 		"__sql__": {
 			"opts": "default CURRENT_TIMESTAMP"
