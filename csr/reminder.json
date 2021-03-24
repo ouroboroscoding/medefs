@@ -29,7 +29,11 @@
 	},
 
 	"_created": {
-		"__type__": "timestamp"
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
 	},
 
 	"agent_id": {
