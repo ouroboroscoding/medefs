@@ -1,13 +1,13 @@
 {
 	"__mysql__": {
 		"auto_primary": false,
-		"create": ["key"],
+		"create": ["_account", "type", "key"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
 			"key": {"unique": null}
 		},
-		"primary": "_account",
+		"primary": false,
 		"table": "patient_verify"
 	},
 
