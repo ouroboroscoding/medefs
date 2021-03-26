@@ -20,5 +20,12 @@
 		"__type__": "string",
 		"__regex__": "^[0-9a-f]{32}$",
 		"__sql__": "char(32)"
+	},
+	"type": {
+		"__type__": "string",
+		"__options__": ["", "email", "forgot"],
+		"__sql__": {
+			"opts": "not null default ''"
+		}
 	}
 }
