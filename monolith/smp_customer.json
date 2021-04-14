@@ -71,11 +71,13 @@
 	},
 
 	"height": {
-		"__type__": "float"
+		"__type__": "float",
+		"__optional__": true
 	},
 
 	"weight": {
-		"__type__": "float"
+		"__type__": "float",
+		"__optional__": true
 	},
 
 	"email": {
@@ -178,7 +180,7 @@
 		"__optional__": true
 	},
 
-	"ifentiFloErrorMessage": {
+	"identiFloErrorMessage": {
 		"__type__": "string",
 		"__maximum__": 65536,
 		"__optional__": true
