@@ -68,6 +68,7 @@
 	"1515": "Can't update non-pending order",
 	"1516": "Must set one of state or provider on a Calendly event",
 	"1517": "Missing or invalid DOB",
+	"1518": "Error with EVerify",
 
 	"_": "Dosespot/Prescription Errors",
 	"1600": "Failed to get DoseSpot token",
