@@ -1,0 +1,46 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "ticket", "type", "subtype", "memo_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ticket": null,
+			"memo_id": null
+		},
+		"table": "csr_ticket_action",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CSR_TicketAction",
+
+	"_id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"ticket": {
+		"__type__": "uuid"
+	},
+
+	"type": {
+		"__type__": "uint"
+	},
+
+	"subtype": {
+		"__type__": "uint"
+	},
+
+	"memo_id": {
+		"__type__": "int"
+	}
+}

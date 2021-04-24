@@ -1,0 +1,65 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "initiated", "resolution", "resolved",
+					"phone_number", "crm_type", "crm_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"phone_number": null,
+			"i_crm": ["crm_type", "crm_id"],
+			"resolved": null
+		},
+		"table": "csr_ticket",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CSR_Ticket",
+
+	"_id": {
+		"__type__": "uint",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"initiated": {
+		"__type__": "string",
+		"__options__": ["agent", "customer", "provider"]
+	},
+
+	"resolved": {
+		"__type__": "timestamp",
+		"__optional__": true
+	},
+
+	"phone_number": {
+		"__type__": "string",
+		"__maximum__": 10
+	},
+
+	"crm_type": {
+		"__type__": "string",
+		"__options__": ["knk", "ms"]
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36
+	}
+}
