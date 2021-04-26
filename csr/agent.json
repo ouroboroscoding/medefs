@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "memo_id", "claims_max", "claims_timeout"],
+		"create": ["_created", "memo_id", "claims_max"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -43,18 +43,6 @@
 		},
 		"__react__": {
 			"title": "Maximum self-claims"
-		}
-	},
-
-	"claims_timeout": {
-		"__type__": "uint",
-		"__options__": [48, 96, 144],
-		"__sql__": {
-			"type": "tinyint unsigned"
-		},
-		"__react__": {
-			"title": "Maximum claim hold",
-			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]]
 		}
 	}
 }

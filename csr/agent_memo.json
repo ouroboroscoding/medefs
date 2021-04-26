@@ -1,8 +1,8 @@
 {
 	"__react__": {
-		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"],
+		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max"],
 		"results": ["userName", "firstName", "lastName"],
-		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"]
+		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max"]
 	},
 
 	"__name__": "CSR_AgentMemo",
@@ -95,16 +95,6 @@
 		"__react__": {
 			"default": 20,
 			"title": "Maximum self-claims"
-		}
-	},
-
-	"claims_timeout": {
-		"__type__": "uint",
-		"__options__": [48, 96, 144],
-		"__react__": {
-			"default": 48,
-			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]],
-			"title": "Maximum claim hold"
 		}
 	}
 }
