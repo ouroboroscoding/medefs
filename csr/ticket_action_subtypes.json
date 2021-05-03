@@ -1,10 +1,10 @@
 {
 	"_": "Claimed",
 	"1": {
-		"100": "SMS",
+		"100": "SMS / Voicemail",
 		"101": "Email",
 		"102": "Call",
-		"103": "Missed Call"
+		"103": "Follow Up"
 	},
 
 	"_": "Provider",
