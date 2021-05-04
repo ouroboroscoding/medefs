@@ -36,6 +36,9 @@
 			"title": "Agent"
 		}
 	},
+	"ticket": {
+		"__type__": "uuid"
+	},
 	"provider": {
 		"__type__": "int",
 		"__optional__": true

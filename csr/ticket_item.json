@@ -5,8 +5,7 @@
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"ticket": null,
-			"i_type_ident": ["type", "identifier"]
+			"ui_ticket_type_id": ["ticket", "type", "identifier"]
 		},
 		"table": "csr_ticket_item",
 		"charset": "utf8mb4",
@@ -16,7 +15,7 @@
 	"__name__": "CSR_TicketItem",
 
 	"_id": {
-		"__type__": "uint",
+		"__type__": "uuid",
 		"__optional__": true
 	},
 

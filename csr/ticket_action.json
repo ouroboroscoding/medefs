@@ -16,7 +16,7 @@
 	"__name__": "CSR_TicketAction",
 
 	"_id": {
-		"__type__": "uint",
+		"__type__": "uuid",
 		"__optional__": true
 	},
 
