@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "memo_id", "claims_max"],
+		"create": ["_created", "memo_id", "type", "escalate", "claims_max"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -32,6 +32,28 @@
 		"__type__":"int",
 		"__react__": {
 			"title": "Memo ID"
+		}
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["agent", "pa"],
+		"__react__": {
+			"type": "select",
+			"options": [["agent", "Agent"], ["pa", "Provider Assistant"]]
+		},
+		"__sql__": {
+			"opts": "default 'agent'"
+		}
+	},
+
+	"escalate": {
+		"__type__": "bool",
+		"__react__": {
+			"title": "Allow Escalation to this Agent"
+		},
+		"__sql__": {
+			"opts": "default 0"
 		}
 	},
 

@@ -1,8 +1,8 @@
 {
 	"__react__": {
-		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max"],
-		"results": ["userName", "firstName", "lastName"],
-		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max"]
+		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "claims_max"],
+		"results": ["userName", "firstName", "lastName", "type"],
+		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "claims_max"]
 	},
 
 	"__name__": "CSR_AgentMemo",
@@ -86,6 +86,29 @@
 		"__optional__": true,
 		"__react__": {
 			"title": "DoseSpot Clinician ID"
+		}
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["agent", "pa"],
+		"__react__": {
+			"default": "agent",
+			"type": "select",
+			"options": [["agent", "Agent"], ["pa", "Provider Assistant"]]
+		},
+		"__sql__": {
+			"opts": "default 'agent'"
+		}
+	},
+
+	"escalate": {
+		"__type__": "bool",
+		"__react__": {
+			"title": "Allow Escalation to this Agent"
+		},
+		"__sql__": {
+			"opts": "default 0"
 		}
 	},
 
