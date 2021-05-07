@@ -16,7 +16,8 @@
 	"_": "Transferred",
 	"3": {
 		"300": "PA Required",
-		"301": "Requested Specific Agent"
+		"301": "Requested Specific Agent",
+		"302": "Provider Required"
 	},
 
 	"_": "Escalated",
