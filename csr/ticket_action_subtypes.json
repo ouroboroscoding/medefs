@@ -30,6 +30,8 @@
 		"500": "Information Provided",
 		"501": "Issue Resolved",
 		"502": "Contact Attempted",
-		"503": "Follow Up Complete"
+		"503": "Follow Up Complete",
+		"504": "QA Order Declined",
+		"505": "Recurring Purchase Canceled"
 	}
 }
