@@ -63,6 +63,10 @@
 			"opts": "default 1"
 		}
 	},
+	"ticket": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
 	"createdAt": {
 		"__type__": "datetime",
 		"__optional__": true,
