@@ -33,6 +33,7 @@
 		"502": "Contact Attempted",
 		"503": "Follow Up Complete",
 		"504": "QA Order Declined",
-		"505": "Recurring Purchase Canceled"
+		"505": "Recurring Purchase Canceled",
+		"506": "Provider Confirmed Prescription"
 	}
 }
