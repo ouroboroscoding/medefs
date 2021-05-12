@@ -33,7 +33,7 @@
 
 	"type": {
 		"__type__": "string",
-		"__options__": ["email", "justcall", "note", "sms"]
+		"__options__": ["email", "jc_call", "jc_sms", "note", "sms"]
 	},
 
 	"identifier": {

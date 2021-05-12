@@ -1,24 +1,23 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "ticket", "name", "type", "memo_id"],
+		"create": ["_created", "type", "memo_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
 			"_created": null,
-			"memo_id": null,
-			"ticket": null
+			"memo_id": null
 		},
-		"table": "csr_ticket_action",
+		"table": "csr_ticket_opened",
+		"primary": "_ticket",
 		"charset": "utf8mb4",
 		"collate": "utf8mb4_0900_ai_ci"
 	},
 
-	"__name__": "CSR_TicketAction",
+	"__name__": "CSR_TicketOpened",
 
-	"_id": {
-		"__type__": "uuid",
-		"__optional__": true
+	"_ticket": {
+		"__type__": "uuid"
 	},
 
 	"_created": {
@@ -29,17 +28,15 @@
 		}
 	},
 
-	"ticket": {
-		"__type__": "uuid"
-	},
-
-	"name": {
-		"__type__": "string",
-		"__options__": ["Escalated", "Transferred"]
-	},
-
 	"type": {
-		"__type__": "uint"
+		"__type__": "string",
+		"__options__": [
+			"Call",
+			"E-mail",
+			"Follow Up",
+			"Provider",
+			"SMS / Voicemail"
+		]
 	},
 
 	"memo_id": {
