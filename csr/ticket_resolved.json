@@ -1,6 +1,6 @@
 {
 	"__mysql__": {
-		"auto_primary": "UUID()",
+		"auto_primary": false,
 		"create": ["_created", "type", "memo_id"],
 		"db": "mems",
 		"host": "primary",
