@@ -5,7 +5,7 @@
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"ui_ticket_type_id": ["ticket", "type", "identifier"]
+			"ui_ticket_type_id": {"unique": ["ticket", "type", "identifier"]}
 		},
 		"table": "csr_ticket_item",
 		"charset": "utf8mb4",
