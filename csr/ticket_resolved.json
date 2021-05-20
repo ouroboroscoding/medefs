@@ -37,7 +37,8 @@
 			"Issue Resolved",
 			"Provider Confirmed Prescription",
 			"QA Order Declined",
-			"Recurring Purchase Canceled"
+			"Recurring Purchase Canceled",
+			"Invalid Transfer: No Purchase Information"
 		]
 	},
 
