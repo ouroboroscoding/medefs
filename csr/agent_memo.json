@@ -1,8 +1,8 @@
 {
 	"__react__": {
-		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"],
-		"results": ["userName", "firstName", "lastName"],
-		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "claims_max", "claims_timeout"]
+		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "claims_max"],
+		"results": ["userName", "firstName", "lastName", "type"],
+		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "claims_max"]
 	},
 
 	"__name__": "CSR_AgentMemo",
@@ -89,22 +89,35 @@
 		}
 	},
 
+	"type": {
+		"__type__": "string",
+		"__options__": ["agent", "pa"],
+		"__react__": {
+			"default": "agent",
+			"type": "select",
+			"options": [["agent", "Agent"], ["pa", "Provider Assistant"]]
+		},
+		"__sql__": {
+			"opts": "default 'agent'"
+		}
+	},
+
+	"escalate": {
+		"__type__": "bool",
+		"__react__": {
+			"title": "Allow Escalation to this Agent"
+		},
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+
 	"claims_max": {
 		"__type__": "uint",
 		"__maximum__": 50,
 		"__react__": {
 			"default": 20,
 			"title": "Maximum self-claims"
-		}
-	},
-
-	"claims_timeout": {
-		"__type__": "uint",
-		"__options__": [48, 96, 144],
-		"__react__": {
-			"default": 48,
-			"options": [[48, "2 Days"], [96, "4 Days"], [144, "6 Days"]],
-			"title": "Maximum claim hold"
 		}
 	}
 }

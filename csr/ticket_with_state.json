@@ -1,0 +1,58 @@
+{
+	"__react__": {
+		"results": [
+			"phone_number", "crm_id",
+			"opened_ts", "opened_type", "opened_by",
+			"resolved_ts", "resolved_type", "resolved_by"
+		]
+	},
+
+	"__name__": "CSR_TicketWithState",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"phone_number": {
+		"__type__": "string",
+		"__maximum__": 10,
+		"__react__": {"title": "Phone #"}
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36,
+		"__react__": {"title": "Customer ID"}
+	},
+
+	"opened_ts": {
+		"__type__": "timestamp",
+		"__react__": {"title": "Opened At"}
+	},
+
+	"opened_type": {
+		"__type__": "string",
+		"__react__": {"title": "Type"}
+	},
+
+	"opened_by": {
+		"__type__": "string",
+		"__react__": {"title": "By"}
+	},
+
+	"resolved_ts": {
+		"__type__": "timestamp",
+		"__react__": {"title": "Resolved At"}
+	},
+
+	"resolved_type": {
+		"__type__": "string",
+		"__react__": {"title": "Type"}
+	},
+
+	"resolved_by": {
+		"__type__": "string",
+		"__react__": {"title": "By"}
+	}
+}

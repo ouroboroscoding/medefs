@@ -1,0 +1,45 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["_created", "type", "memo_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"_created": null,
+			"memo_id": null
+		},
+		"table": "csr_ticket_opened",
+		"primary": "_ticket",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CSR_TicketOpened",
+
+	"_ticket": {
+		"__type__": "uuid"
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": [
+			"Call",
+			"E-mail",
+			"Follow Up",
+			"Provider",
+			"SMS / Voicemail"
+		]
+	},
+
+	"memo_id": {
+		"__type__": "int"
+	}
+}

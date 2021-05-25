@@ -1,0 +1,13 @@
+{
+	"Transferred": {
+		"100": "PA Required",
+		"101": "Requested Specific Agent/PA",
+		"102": "Provider Required",
+		"103": "Agent/PA Required"
+	},
+
+	"Escalated": {
+		"201": "Disgruntled Patient / Possible Dispute",
+		"202": "Rebate Needed"
+	}
+}
