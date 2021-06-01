@@ -4,11 +4,13 @@
 		"101": "Requested Specific Agent/PA",
 		"102": "Provider Required",
 		"103": "Agent/PA Required",
-		"104": "Onboarding"
+		"104": "HRT Onboarding",
+		"105": "ED Onboarding"
 	},
 
 	"Escalated": {
-		"201": "Disgruntled Patient / Possible Dispute",
-		"202": "Rebate Needed"
+		"200": "Disgruntled Patient / Possible Dispute",
+		"201": "Rebate Needed",
+		"202": "Process Issue"
 	}
 }
