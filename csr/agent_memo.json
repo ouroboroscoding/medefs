@@ -91,11 +91,11 @@
 
 	"type": {
 		"__type__": "string",
-		"__options__": ["agent", "pa"],
 		"__react__": {
-			"default": "agent",
-			"type": "select",
-			"options": [["agent", "Agent"], ["pa", "Provider Assistant"]]
+			"extra_space": false,
+			"options": [["agent", "Agent"], ["pa", "Provider Assistant"], ["on_hrt", "HRT Onboarding"]],
+			"title": "Type",
+			"type": "multiselectcsv"
 		},
 		"__sql__": {
 			"opts": "default 'agent'"
