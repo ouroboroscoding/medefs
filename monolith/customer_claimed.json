@@ -37,7 +37,8 @@
 		}
 	},
 	"ticket": {
-		"__type__": "uuid"
+		"__type__": "uuid",
+		"__optional__": true
 	},
 	"provider": {
 		"__type__": "int",
