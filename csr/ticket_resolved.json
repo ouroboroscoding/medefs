@@ -38,6 +38,7 @@
 			"Provider Confirmed Prescription",
 			"QA Order Declined",
 			"Recurring Purchase Canceled",
+			"Script Entered",
 			"Invalid Transfer: No Purchase Information"
 		]
 	},
