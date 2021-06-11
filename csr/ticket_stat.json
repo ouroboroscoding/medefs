@@ -1,0 +1,67 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "range", "date", "list", "memo_id", "action", "count"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_unique": {"unique": ["range", "date", "list", "memo_id", "action"]}
+		},
+		"table": "csr_ticket_stat",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CSR_TicketStat",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL"
+		}
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"range": {
+		"__type__": "string",
+		"__options__": ["month", "week", "day"]
+	},
+
+	"date": {
+		"__type__": "date"
+	},
+
+	"list": {
+		"__type__": "string",
+		"__options__": ["", "agent", "pa", "on_hrt"],
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default ''"
+		}
+	},
+
+	"memo_id": {
+		"__type__": "uint",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default 0"
+		}
+	},
+
+	"action": {
+		"__type__": "string",
+		"__options__": ["opened", "resolved"]
+	},
+
+	"count": {
+		"__type__": "uint"
+	}
+}
