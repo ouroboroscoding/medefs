@@ -1,8 +1,8 @@
 {
 	"__react__": {
-		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "claims_max"],
+		"create": ["userName", "password", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "label", "claims_max"],
 		"results": ["userName", "firstName", "lastName", "type"],
-		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "claims_max"]
+		"update": ["userName", "firstName", "lastName", "email", "dsClinicId", "dsClinicianId", "type", "escalate", "label", "claims_max"]
 	},
 
 	"__name__": "CSR_AgentMemo",
