@@ -112,6 +112,14 @@
 		}
 	},
 
+	"label": {
+		"__type__": "string",
+		"__maximum__": 63,
+		"__react__": {
+			"title": "Escalate / Transfer label"
+		}
+	},
+
 	"claims_max": {
 		"__type__": "uint",
 		"__maximum__": 50,
