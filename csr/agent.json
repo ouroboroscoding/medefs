@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "memo_id", "type", "escalate", "claims_max"],
+		"create": ["_created", "memo_id", "type", "escalate", "label", "claims_max", "oof", "oof_replacement"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -79,6 +79,20 @@
 		},
 		"__react__": {
 			"title": "Maximum self-claims"
+		}
+	},
+
+	"oof": {
+		"__type__": "bool",
+		"__sql__": {
+			"opts": "default 0"
+		}
+	},
+
+	"oof_replacement": {
+		"__type__": "int",
+		"__sql__": {
+			"opts": "default 0"
 		}
 	}
 }
