@@ -1,0 +1,54 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "memo_id", "dow", "start", "end"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_dow_memo": {"unique": ["memo_id", "dow"]}
+		},
+		"table": "csr_agent_office_hours",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CSR_AgentOfficeHours",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"memo_id": {
+		"__type__": "int"
+	},
+
+	"dow": {
+		"__type__": "string",
+		"__options__": ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
+	},
+
+	"start": {
+		"__type__": "time"
+	},
+
+	"end": {
+		"__type__": "time"
+	}
+}
