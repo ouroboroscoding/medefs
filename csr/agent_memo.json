@@ -116,6 +116,7 @@
 	"label": {
 		"__type__": "string",
 		"__maximum__": 63,
+		"__optional__": true,
 		"__react__": {
 			"title": "Escalate / Transfer label"
 		}
