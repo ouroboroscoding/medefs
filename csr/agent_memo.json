@@ -91,6 +91,7 @@
 
 	"type": {
 		"__type__": "string",
+		"__optional__": true,
 		"__react__": {
 			"extra_space": false,
 			"options": [["agent", "Agent"], ["pa", "Provider Assistant"], ["on_hrt", "HRT Onboarding"]],
