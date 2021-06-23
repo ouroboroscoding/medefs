@@ -56,7 +56,8 @@
 	},
 
 	"dateOfBirth": {
-		"__type__": "date"
+		"__type__": "date",
+		"__optional__": true
 	},
 
 	"ssn": {
