@@ -1,0 +1,23 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["agent_id", "memo_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"memo_id": {"unique": null}
+		},
+		"table": "justcall_memo_id",
+		"primary": "agent_id"
+	},
+
+	"__name__": "JustCall_MemoId",
+
+	"agent_id": {
+		"__type__":"uint"
+	},
+
+	"memo_id": {
+		"__type__": "int"
+	}
+}
