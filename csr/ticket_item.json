@@ -38,7 +38,8 @@
 
 	"direction": {
 		"__type__": "string",
-		"__options__": ["incoming", "outgoing"]
+		"__options__": ["incoming", "outgoing"],
+		"__optional__": true
 	},
 
 	"identifier": {
@@ -47,6 +48,9 @@
 	},
 
 	"memo_id": {
-		"__type__": "int"
+		"__type__": "int",
+		"__sql__": {
+			"opts": "default 0"
+		}
 	}
 }
