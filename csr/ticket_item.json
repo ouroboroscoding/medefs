@@ -49,6 +49,7 @@
 
 	"memo_id": {
 		"__type__": "int",
+		"__optional__": true,
 		"__sql__": {
 			"opts": "default 0"
 		}
