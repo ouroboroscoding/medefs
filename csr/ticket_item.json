@@ -1,7 +1,7 @@
 {
 	"__mysql__": {
 		"auto_primary": "UUID()",
-		"create": ["_created", "ticket", "type", "identifier"],
+		"create": ["_created", "ticket", "type", "direction", "identifier", "memo_id"],
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
@@ -36,8 +36,21 @@
 		"__options__": ["email", "jc_call", "jc_sms", "note", "sms"]
 	},
 
+	"direction": {
+		"__type__": "string",
+		"__options__": ["incoming", "outgoing"],
+		"__optional__": true
+	},
+
 	"identifier": {
 		"__type__": "string",
 		"__maximum__": 36
+	},
+
+	"memo_id": {
+		"__type__": "int",
+		"__sql__": {
+			"opts": "default 0"
+		}
 	}
 }
