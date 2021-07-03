@@ -6,7 +6,7 @@
 		"indexes": {
 			"ui_gts": ["groupId", "type", "step"]
 		},
-		"primary": "code",
+		"primary": "id",
 		"table": "sms_template",
 		"engine": "InnoDB",
 		"charset": "utf8mb4",
