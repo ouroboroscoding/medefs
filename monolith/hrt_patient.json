@@ -32,7 +32,7 @@
 
 	"processStatus": {
 		"__type__": "string",
-		"__options__": ["Purchased Lab Kit", "Watched Video", "Ordered Lab Kit", "Shipped Lab Kit", "Delivered Lab Kit", "Received Lab Results", "Sent H2 Questions and Calendly", "Received H2", "Received Calendly", "Created $0 Pending", "Missed Calendly", "Provider Approval", "Dropped"]
+		"__options__": ["Purchased Lab Kit", "Watched Video", "Ordered Lab Kit", "Shipped Lab Kit", "Delivered Lab Kit", "Received Lab Results", "Sent H2 Questions and Calendly", "Received H2", "Received Calendly", "Created $0 Pending", "Missed Calendly", "Provider Approval", "PSA Retest Sent", "PSA Retest Received", "Dropped", "Hold"]
 	},
 
 	"joinDate": {
