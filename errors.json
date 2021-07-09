@@ -69,6 +69,7 @@
 	"1516": "Must set one of state or provider on a Calendly event",
 	"1517": "Missing or invalid DOB",
 	"1518": "Error with EVerify",
+	"1519": "Provider trying to approve bad order",
 
 	"_": "Dosespot/Prescription Errors",
 	"1600": "Failed to get DoseSpot token",
