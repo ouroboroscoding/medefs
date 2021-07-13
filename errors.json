@@ -19,6 +19,7 @@
 	"1002": "No rights",
 	"1003": "Invalid CRM Type",
 	"1004": "3rd party not responding",
+	"1005": "Memo/Charlotte changes",
 
 	"_": "DB Errors",
 	"1100": "Failed to create record",
