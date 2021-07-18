@@ -7,7 +7,7 @@
 		"db": "monolith",
 		"host": "monolith",
 		"indexes": {
-			"cust_order": {"unique": ["customerId", "purchaseId"]}
+			"cust_purchase": {"unique": ["customerId", "purchaseId"]}
 		},
 		"primary": "id",
 		"table": "kt_order_continuous",
