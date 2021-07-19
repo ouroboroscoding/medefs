@@ -1,0 +1,46 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["customerId", "count", "total", "last", "createdAt", "updatedAt"],
+		"db": "monolith",
+		"host": "monolith",
+		"indexes": {},
+		"primary": "customerId",
+		"table": "customer_reviews",
+		"engine": "InnoDB",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CustomerReviews",
+
+	"customerId": {
+		"__type__": "uint"
+	},
+
+	"count": {
+		"__type__": "uint"
+	},
+
+	"total": {
+		"__type__": "uint"
+	},
+
+	"last": {
+		"__type__": "uint"
+	},
+
+	"createdAt": {
+		"__type__": "datetime",
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"updatedAt": {
+		"__type__": "datetime",
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	}
+}

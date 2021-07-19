@@ -21,6 +21,6 @@
 	},
 
 	"ts": {
-		"__type__": "timestamp"
+		"__type__": "uint"
 	}
 }
