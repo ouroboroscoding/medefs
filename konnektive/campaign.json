@@ -2,7 +2,7 @@
 	"__name__": "Konnektive_Campaign",
 
 	"__mysql__": {
-		"auto_primary": "false",
+		"auto_primary": false,
 		"create": ["_created", "_updated", "name", "agent_types"],
 		"db": "mems",
 		"host": "primary",
@@ -16,7 +16,8 @@
 	},
 
 	"__react__": {
-		"insert": ["_id", "name", "agent_types"],
+		"copyPrimary": false,
+		"create": ["_id", "name", "agent_types"],
 		"results": ["_id", "name", "agent_types"],
 		"update": ["name", "agent_types"]
 	},

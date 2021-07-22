@@ -2,7 +2,7 @@
 	"__name__": "Konnektive_CampaignProduct",
 
 	"__mysql__": {
-		"auto_primary": "false",
+		"auto_primary": false,
 		"create": ["_created", "_updated", "campaign_id", "name", "default_qty", "default_price"],
 		"db": "mems",
 		"host": "primary",
@@ -16,7 +16,8 @@
 	},
 
 	"__react__": {
-		"insert": ["_id", "campaign_id", "name", "default_qty", "default_price"],
+		"copyPrimary": false,
+		"create": ["_id", "campaign_id", "name", "default_qty", "default_price"],
 		"results": ["_id", "campaign_id", "name"],
 		"update": ["campaign_id", "name", "default_qty", "default_price"]
 	},
