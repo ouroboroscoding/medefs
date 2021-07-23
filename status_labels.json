@@ -1,9 +1,7 @@
 [
 	"",
-	"Provider",
 	"Provider - Calendly",
 	"Provider - No Prescription",
-	"CSR",
 	"CSR - HRTP",
 	"CSR - Need Info",
 	"CSR - Address",
@@ -19,5 +17,14 @@
 	"CSR - Canceled",
 	"CSR - LABS",
 	"CSR - ZRTR",
-	"CSR - Expiring Soon"
+	"CSR - Expiring Soon",
+	"CSR - LAB RETEST - PSA",
+	"CSR - LAB RETEST T",
+	"CSR - CALL",
+	"CSR - READY",
+	"CSR - HRT - Need Attention",
+	"HRT - Need Attention"
+	"Clomid Review",
+	"NRY - Hold on Refill",
+	"NRY - Needs more Info"
 ]
