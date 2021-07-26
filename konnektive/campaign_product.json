@@ -1,0 +1,70 @@
+{
+	"__name__": "Konnektive_CampaignProduct",
+
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["_created", "_updated", "campaign_id", "name", "default_qty", "default_price"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"ui_campaign_name": {"unique": ["campaign_id", "name"]}
+		},
+		"primary": "_id",
+		"table": "konnektive_campaign_product",
+		"charset": "utf8",
+		"collate": "utf8_general_ci"
+	},
+
+	"__react__": {
+		"copyPrimary": false,
+		"create": ["_id", "name", "default_qty", "default_price"],
+		"results": ["_id", "name", "default_qty", "default_price"],
+		"update": ["name", "default_qty", "default_price"]
+	},
+
+	"_id": {
+		"__type__": "uint",
+		"__react__": {
+			"title": "Campaign Product ID"
+		}
+	},
+
+	"_created": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__":"timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"campaign_id": {
+		"__type__": "uint"
+	},
+
+	"name": {
+		"__type__": "string",
+		"__maximum__": "63"
+	},
+
+	"default_qty": {
+		"__type__": "uint",
+		"__react__": {
+			"title": "Default Quanity"
+		}
+	},
+
+	"default_price": {
+		"__type__": "price",
+		"__react__": {
+			"title": "Default Price"
+		}
+	}
+}
