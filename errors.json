@@ -20,6 +20,7 @@
 	"1003": "Invalid CRM Type",
 	"1004": "3rd party not responding",
 	"1005": "Memo/Charlotte changes",
+	"1006": "3rd party invalid response",
 
 	"_": "DB Errors",
 	"1100": "Failed to create record",
