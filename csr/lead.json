@@ -1,0 +1,55 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["_created", "_updated", "customerId", "status", "type", "medications"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"i_list": ["status", "type", "medications"]
+		},
+		"primary": "customerId",
+		"table": "csr_lead",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_0900_ai_ci"
+	},
+
+	"__name__": "CSR_Lead",
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "DEFAULT current_timestamp"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "DEFAULT current_timestamp ON UPDATE current_timestamp"
+		}
+	},
+
+	"customerId": {
+		"__type__": "uint"
+	},
+
+	"status": {
+		"__type__": "string",
+		"__options__": ["added", "upsold", "failed", "ignore"]
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["current", "cold"]
+	},
+
+	"medications": {
+		"__type__": "uint",
+		"__react__": {
+			"type": "options",
+			"options": [[1, "ED"], [2, "HRT"]]
+		}
+	}
+}

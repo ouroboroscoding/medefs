@@ -79,6 +79,7 @@
 	"1601": "DoseSpot HTTP Request failed",
 	"1602": "DoseSpot REST Error",
 	"1603": "Can't change pharmacy on product",
+	"1604": "HRT Order already claimed",
 
 	"_": "USPS Errors",
 	"1700": "USPS Connecton Failure",

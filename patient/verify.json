@@ -5,7 +5,8 @@
 		"db": "mems",
 		"host": "primary",
 		"indexes": {
-			"key": {"unique": null}
+			"key": {"unique": null},
+			"account_type": {"unique": ["_account", "type"]}
 		},
 		"primary": false,
 		"table": "patient_verify"

@@ -1,0 +1,38 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["type"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {},
+		"table": "justcall_queue_number",
+		"primary": "justcall_number"
+	},
+
+	"__react__": {
+		"copyPrimary": false,
+		"primary": "justcall_number"
+	},
+
+	"__name__": "JustCall_QueueNumber",
+
+	"justcall_number": {
+		"__type__": "string",
+		"__regex__": "^1\\d{10}$",
+		"__react__": {
+			"title": "JustCall Number"
+		},
+		"__sql__": {
+			"type": "char(11)"
+		}
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["agent", "pa", "on_hrt"],
+		"__react__": {
+			"options": [["agent", "Agent"], ["pa", "Provider Assistant"], ["on_hrt", "HRT Onboarding"]],
+			"title": "Type"
+		}
+	}
+}
