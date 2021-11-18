@@ -15,6 +15,11 @@
 		"collate": "utf8mb4_0900_ai_ci"
 	},
 
+	"__react__": {
+		"create": ["firstName", "lastName", "gender", "dateOfBirth", "email", "address1", "address2", "city", "state", "zipCode", "primaryPhone"],
+		"update": ["firstName", "lastName", "gender", "dateOfBirth", "email", "address1", "address2", "city", "state", "zipCode", "primaryPhone"]
+	},
+
 	"__name__": "DsPatient",
 
 	"id": {
@@ -38,7 +43,8 @@
 	"firstName": {
 		"__type__": "string",
 		"__maximum__": 35,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {"title": "First Name"}
 	},
 	"middleName": {
 		"__type__": "string",
@@ -48,7 +54,8 @@
 	"lastName": {
 		"__type__": "string",
 		"__maximum__": 35,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {"title": "Last Name"}
 	},
 	"suffix": {
 		"__type__": "string",
@@ -58,27 +65,34 @@
 	"dateOfBirth": {
 		"__type__": "string",
 		"__maximum__": 20,
-		"__optional__": true
+		"__react__": {"title": "Date of Birth", "type": "date"}
 	},
 	"gender": {
 		"__type__": "string",
-		"__maximum__": 1,
-		"__optional__": true
+		"__options__": ["1", "2", "3"],
+		"__optional__": true,
+		"__react__": {
+			"type": "select",
+			"options": [["1", "Male"], ["2", "Female"], ["3", "Uknown"]]
+		}
 	},
 	"email": {
 		"__type__": "string",
 		"__maximum__": 255,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {"title": "E-mail"}
 	},
 	"address1": {
 		"__type__": "string",
 		"__maximum__": 35,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {"title": "Address"}
 	},
 	"address2": {
 		"__type__": "string",
 		"__maximum__": 35,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {"title": "Suite/Office/Appartment"}
 	},
 	"city": {
 		"__type__": "string",
@@ -93,7 +107,8 @@
 	"zipCode": {
 		"__type__": "string",
 		"__maximum__": 10,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {"title": "Zip Code"}
 	},
 	"phoneAdditional1": {
 		"__type__": "string",
@@ -118,7 +133,8 @@
 	"primaryPhone": {
 		"__type__": "string",
 		"__maximum__": 25,
-		"__optional__": true
+		"__optional__": true,
+		"__react__": {"title": "Phone Number"}
 	},
 	"primaryPhoneType": {
 		"__type__": "string",

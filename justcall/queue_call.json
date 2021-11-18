@@ -1,0 +1,73 @@
+{
+	"__mysql__": {
+		"auto_primary": false,
+		"create": ["datetime", "contact_number", "crm_id", "justcall_number", "type", "ivr"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {},
+		"table": "justcall_queue_call",
+		"primary": "call_sid"
+	},
+
+	"__react__": {
+		"primary": "call_sid",
+		"results": ["datetime", "contact_number", "type", "ivr"]
+	},
+
+	"__name__": "JustCall_QueueCall",
+
+	"call_sid": {
+		"__type__": "string",
+		"__maximum__": 255
+	},
+
+	"datetime": {
+		"__type__": "datetime",
+		"__react__": {
+			"title": "Time"
+		}
+	},
+
+	"contact_number": {
+		"__type__": "string",
+		"__maximum__": 12,
+		"__react__": {
+			"title": "Contact"
+		}
+	},
+
+	"crm_id": {
+		"__type__": "string",
+		"__maximum__": 36,
+		"__optional__": true
+	},
+
+	"justcall_number": {
+		"__type__": "string",
+		"__maximum__": 12,
+		"__react__": {
+			"title": "JustCall"
+		}
+	},
+
+	"type": {
+		"__type__": "string",
+		"__options__": ["agent", "pa", "on_hrt"],
+		"__react__": {
+			"options": [["agent", "Agent"], ["pa", "Provider Assistant"], ["on_hrt", "HRT Onboarding"]],
+			"title": "Type"
+		}
+	},
+
+	"ivr": {
+		"__type__": "string",
+		"__maximum__": 255,
+		"__optional__": true,
+		"__react__": {
+			"title": "IVR"
+		},
+		"__sql__": {
+			"opts": "default ''"
+		}
+	}
+}

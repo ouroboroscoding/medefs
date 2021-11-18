@@ -1,0 +1,65 @@
+{
+	"__mysql__": {
+		"auto_primary": "UUID()",
+		"create": ["_created", "_updated", "title", "icd", "dosespot_id"],
+		"db": "mems",
+		"host": "primary",
+		"indexes": {
+			"title": {"unique": null}
+		},
+		"table": "prescriptions_diagnosis",
+		"engine": "InnoDB"
+	},
+
+	"__react__": {
+		"create": ["title", "icd", "dosespot_id"],
+		"results": ["title", "icd", "dosespot_id"],
+		"update": ["title", "icd", "dosespot_id"]
+	},
+
+	"__name__": "Prescriptions_Diagnosis",
+
+	"_id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"_created": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP"
+		}
+	},
+
+	"_updated": {
+		"__type__": "timestamp",
+		"__optional__": true,
+		"__sql__": {
+			"opts": "default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP"
+		}
+	},
+
+	"title": {
+		"__type__": "string",
+		"__maximum__": "63"
+	},
+
+	"icd": {
+		"__type__": "string",
+		"__regex__": "^[A-Z]\\d{2}\\.\\d{1,3}[A-Z]?$",
+		"__react__": {
+			"title": "ICD-10 Code"
+		},
+		"__sql__": {
+			"type": "varchar(8)"
+		}
+	},
+
+	"dosespot_id": {
+		"__type__": "uint",
+		"__react__": {
+			"title": "DoseSpot Diagnosis ID"
+		}
+	}
+}

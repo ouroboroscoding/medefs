@@ -35,6 +35,8 @@
 			"Follow Up Complete",
 			"Information Provided",
 			"Issue Resolved",
+			"Lead Upsold",
+			"Lead Not Interested",
 			"Provider Confirmed Prescription",
 			"QA Order Declined",
 			"Recurring Purchase Canceled",
